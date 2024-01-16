@@ -60,7 +60,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .jumbo{
-  background-image: url("https://avada.website/driving/wp-content/uploads/sites/114/2019/01/homepage-hero-background.jpg");
+  background-image: url("..\assets/homepage-main-background.jpg");
   height: 500px;
   background-size: cover;
   color: $primary;
