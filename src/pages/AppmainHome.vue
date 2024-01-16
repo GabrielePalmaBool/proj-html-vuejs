@@ -42,10 +42,11 @@ export default {
 
             <p>when you make a block booking with us your first lesson is included free.</p>
 
-            <input type="text">
-            <input type="text">
-            <input type="text">
-
+            <input type="text" class="form-control inputT" placeholder="Your Name*" >
+            <input type="text" class="form-control inputT" placeholder="Email*" >
+            <input type="text" class="form-control inputT" placeholder="Telephone" >
+            <input type="text" class="form-control inputT" placeholder="Location" >
+            <button type="button" class="btn btn-primary">REQUEST A CALLBACK</button>
           </div>
 
         </div>
@@ -103,6 +104,20 @@ export default {
         h2{
           margin-top: 20px;
           color: $quaternary;
+        }
+
+        .inputT{
+          margin:20px;
+          background-color: rgb(247, 247, 247);
+          width: 380px;
+          height: 50px;
+          border:1px solid rgb(247, 247, 247)
+        }
+
+        .btn-primary{
+          color: $primary;
+          background-color:$quaternary;
+          border-radius: 20px;
         }
         
       }
