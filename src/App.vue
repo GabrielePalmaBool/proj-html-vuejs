@@ -10,16 +10,16 @@ import { RouterView } from 'vue-router';
 
 export default {
 
-components: {
-    Appheader,
-    Appfooter,
-    RouterView
-}
+    components: {
+        Appheader,
+        Appfooter,
+        RouterView
+    }
 }
 </script>
 
 <template>
-    <Appheader/>
+    <Appheader />
     <router-view></router-view>
     <Appfooter />
 </template>
