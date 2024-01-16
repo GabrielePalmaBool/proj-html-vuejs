@@ -13,9 +13,10 @@ export default {
         <h4>We offer the finest driving tuition money can buy</h4>
       </div>
     </div>
+
     <!-- Primo container -->
     <div class="container first">
-      <div class="row">
+      <div class="row row-cols-2">
         <div class="col left">
           <h2>Get Behind the Wheel</h2>
 
@@ -68,6 +69,22 @@ export default {
         </div>
       </div>
     </div>
+
+    <!-- Secondo jumbo-->
+    <div class="jumbo2">
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col p-5">
+            <h2>Start learning to Drive Today</h2>
+            <h4>Give us a call to schedule your first drive lesson</h4>
+          </div>
+          <div class="col p-5">
+            <i class="fa-solid fa-phone"></i>
+            <h5>1-800-555-555</h5>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -85,6 +102,38 @@ export default {
   h1 {
     font-size: 70px;
     margin-top: 280px;
+  }
+}
+
+.jumbo2 {
+  background-image: url('..\assets/homepage-main2-background.jpg');
+  height: 300px;
+  background-size: cover;
+  margin-top: 60px;
+
+  h2 {
+    margin-top: 50px;
+    color: $primary;
+    font-size: 40px;
+    display: inline-block;
+  }
+
+  h4 {
+    color: $primary;
+  }
+
+  .fa-phone {
+    font-size: 50px;
+    color: $primary;
+    vertical-align: middle;
+    margin-right: 30px;
+  }
+
+  h5 {
+    margin-top: 50px;
+    color: $primary;
+    font-size: 30px;
+    display: inline-block;
   }
 }
 
@@ -132,6 +181,7 @@ export default {
           color: $primary;
           background-color: $quaternary;
           border-radius: 20px;
+          font-weight: bold;
         }
       }
     }
