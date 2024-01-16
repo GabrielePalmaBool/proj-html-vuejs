@@ -9,17 +9,17 @@ import { RouterView } from 'vue-router';
 
 export default {
 
-components: {
-    Appheader,
-    Appmain,
-    Appfooter,
-    RouterView
-}
+    components: {
+        Appheader,
+        Appmain,
+        Appfooter,
+        RouterView
+    }
 }
 </script>
 
 <template>
-    <Appheader/>
+    <Appheader />
     <router-view></router-view>
     <Appfooter />
 </template>
