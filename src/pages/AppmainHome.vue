@@ -77,13 +77,14 @@ export default {
 
 .jumbo {
   background-image: url('..\assets/homepage-main-background.jpg');
-  height: 500px;
+  height: 700px;
   background-size: cover;
   color: $primary;
   padding-top: 50px;
 
   h1 {
     font-size: 70px;
+    margin-top: 280px;
   }
 }
 

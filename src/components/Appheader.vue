@@ -71,9 +71,12 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header {
-  background: #000000dd;
+  background: #0000007f;
   width: 100%;
   box-shadow: 0 4px 5px -4px gray;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   .container {
     display: flex;
