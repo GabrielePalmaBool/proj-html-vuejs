@@ -93,7 +93,10 @@ export default {
           <div class="col p-5">
             <div class="box">
               <div class="subbox">
-                <img src="..\assets/homepage-main-new-corner.jpg" alt="" />
+                <img
+                  src="..\assets/homepage-main-new-corner.jpg"
+                  alt="sub box1"
+                />
               </div>
               <div class="text">
                 <h2>Courses</h2>
@@ -108,9 +111,42 @@ export default {
               </button>
             </div>
           </div>
-          <div class="col p-5">
-            <i class="fa-solid fa-phone"></i>
-            <h5>1-800-555-555</h5>
+
+          <div class="row row-cols-3">
+            <div class="col p-5">
+              <div class="img">
+                <img
+                  src="..\assets/homepage-main-courses-passplus.jpg"
+                  alt="immagine auto1"
+                />
+              </div>
+
+              <h3>Pass Plus</h3>
+              <button type="button" class="btn btn-primary">Learn More</button>
+            </div>
+
+            <div class="col p-5">
+              <div class="img">
+                <img
+                  src="..\assets/homepage-main-course-intensive.jpg"
+                  alt="immagine auto2"
+                />
+              </div>
+              <h3>Intensive Curse</h3>
+              <button type="button" class="btn btn-primary">
+                Intensive Course
+              </button>
+            </div>
+            <div class="col p-5">
+              <div class="img">
+                <img
+                  src="..\assets/homepage-main-courses-instructor.jpg"
+                  alt="immagine auto3"
+                />
+              </div>
+              <h3>Instructors</h3>
+              <button type="button" class="btn btn-primary">Instructors</button>
+            </div>
           </div>
         </div>
       </div>
@@ -224,48 +260,76 @@ export default {
   background-size: cover;
   background-position: center bottom;
 
-  .box {
-    background-color: $primary;
-    width: 400px;
-    height: 400px;
-    border-radius: 10px;
-    margin-top: -100px;
-    position: relative;
-    box-shadow: 0px 25px 20px 0px #c7c7c7;
+  .row {
+    .box {
+      background-color: $primary;
+      width: 400px;
+      height: 400px;
+      border-radius: 10px;
+      margin-top: -100px;
+      position: relative;
+      box-shadow: 0px 25px 20px 0px #c7c7c7;
 
-    .subbox {
-      position: absolute;
-      top: 0;
-      width: 80px;
+      .subbox {
+        position: absolute;
+        top: 0;
+        width: 80px;
 
-      img {
-        border-top-left-radius: 10px;
+        img {
+          border-top-left-radius: 10px;
+        }
+      }
+      .text {
+        text-align: center;
+        width: 300px;
+        position: absolute;
+        top: 20%;
+        right: 15%;
+        h2 {
+          margin-bottom: 40px;
+        }
+
+        p {
+          color: rgb(146, 167, 195);
+        }
+      }
+
+      .btn-primary {
+        position: absolute;
+        top: 75%;
+        right: 27%;
+        color: $primary;
+        background-color: $quaternary;
+        border-radius: 20px;
+        font-weight: bold;
       }
     }
+    .row {
+      width: 680px;
+      .col {
+        width: 200px;
+        text-align: center;
 
-    .text {
-      text-align: center;
-      width: 300px;
-      position: absolute;
-      top: 20%;
-      right: 15%;
-      h2 {
-        margin-bottom: 40px;
+        .img {
+          width: 180px;
+        }
+
+        h3 {
+          margin: 10px -80px 10px 0px;
+          font-size: 25px;
+          color: rgb(146, 167, 195);
+        }
+
+        .btn-primary {
+          color: rgb(119, 153, 173);
+          border-radius: 20px;
+          font-weight: bold;
+          background-color: rgb(231, 235, 238);
+          border: 2px solid rgb(119, 153, 173);
+          width: 155px;
+          margin-left: 15px;
+        }
       }
-
-      p {
-        color: rgb(146, 167, 195);
-      }
-    }
-
-    .btn-primary {
-      position: absolute;
-      top: 75%;
-      right: 27%;
-      color: $primary;
-      background-color: $quaternary;
-      border-radius: 20px;
-      font-weight: bold;
     }
   }
 }
