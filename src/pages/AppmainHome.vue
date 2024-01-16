@@ -131,6 +131,7 @@ export default {
           color: $primary;
           background-color: $quaternary;
           border-radius: 20px;
+          font-weight: bold;
         }
       }
     }
