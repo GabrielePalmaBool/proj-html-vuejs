@@ -62,6 +62,39 @@ export default {
         </div>
       </div>
     </div>
+    <div class="container-fluid section-telephone">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Start Learning to Drive Today</h1>
+            <h3>Give us a call to schedule your first driving lesson</h3>
+          </div>
+          <div class="col">
+            <h2>
+              <i class="fa-solid fa-phone" style="color: #ffffff"></i
+              >1-800-555-555
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid price-container">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Course Tuition Prices</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              ultrices auctor sapien id cursus. Aliquam maximus turpis in
+              vehicula semper.
+            </p>
+          </div>
+          <div class="col">
+            <button>MEET YOUR INSTRUCTORS</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -95,6 +128,7 @@ export default {
   // }
 }
 .price-container {
+  background-color: #e5f2fa;
   padding: 100px 0 100px 0;
   p {
     color: #7799ad;
@@ -107,7 +141,7 @@ export default {
     padding: 11px 23px;
     border-radius: 25px;
     margin-top: 75px;
-    width: 100%;
+    width: 80%;
     color: white;
     background-color: #7abc64;
     border: none;
@@ -144,7 +178,16 @@ export default {
   transition: all 0.2s;
 }
 
-.container-fluid {
-  background-color: #e5f2fa;
+.section-telephone {
+  background-image: url('..\assets/prices-hero-background.jpg');
+  color: white;
+  height: 250px;
+  background-size: cover;
+  padding-top: 70px;
+  h2 {
+    padding-top: 40px;
+    text-align: end;
+    padding-right: 30px;
+  }
 }
 </style>
