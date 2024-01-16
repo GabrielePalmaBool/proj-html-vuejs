@@ -74,6 +74,9 @@ header {
   background: #000000dd;
   width: 100%;
   box-shadow: 0 4px 5px -4px gray;
+  position: absolute;
+  top: 0;
+  left: 0;
 
   .container {
     display: flex;
