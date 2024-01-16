@@ -1,16 +1,15 @@
 <script>
 export default {
-    name: "AppmainPrice"
+  name: 'AppmainPrice'
 }
 </script>
 
 <template>
   <main>
     <h2>Sono MainPrice</h2>
-</main>
+  </main>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
-
 </style>
