@@ -85,6 +85,36 @@ export default {
         </div>
       </div>
     </div>
+
+    <!-- Terzo jumbo-->
+    <div class="jumbo3">
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col p-5">
+            <div class="box">
+              <div class="subbox">
+                <img src="..\assets/homepage-main-new-corner.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Courses</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  ultrices auctor sapien id cursus. Aliquam maximus turpis in
+                  vehicula semper.
+                </p>
+              </div>
+              <button type="button" class="btn btn-primary">
+                COURSE INFORMATION
+              </button>
+            </div>
+          </div>
+          <div class="col p-5">
+            <i class="fa-solid fa-phone"></i>
+            <h5>1-800-555-555</h5>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -184,6 +214,58 @@ export default {
           font-weight: bold;
         }
       }
+    }
+  }
+}
+
+.jumbo3 {
+  background-image: url('..\assets/homepage-main3-background.jpg');
+  height: 500px;
+  background-size: cover;
+  background-position: center bottom;
+
+  .box {
+    background-color: $primary;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: -100px;
+    position: relative;
+    box-shadow: 0px 25px 20px 0px #c7c7c7;
+
+    .subbox {
+      position: absolute;
+      top: 0;
+      width: 80px;
+
+      img {
+        border-top-left-radius: 10px;
+      }
+    }
+
+    .text {
+      text-align: center;
+      width: 300px;
+      position: absolute;
+      top: 20%;
+      right: 15%;
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      p {
+        color: rgb(146, 167, 195);
+      }
+    }
+
+    .btn-primary {
+      position: absolute;
+      top: 75%;
+      right: 27%;
+      color: $primary;
+      background-color: $quaternary;
+      border-radius: 20px;
+      font-weight: bold;
     }
   }
 }
