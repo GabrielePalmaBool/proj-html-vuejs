@@ -1,17 +1,23 @@
 <script>
 export default {
-    name: "AppmainHome"
+    name: "NotFound"
 }
 </script>
 
 <template>
   <main>
-    <h2>Sono MainHomedvfdasfdas</h2>
+    <h3>Pagina non trovata</h3>
 </main>
 </template>
 
 <style lang="scss" scoped>
 //Scss relativo alla sola sezione di header
 @use '../styles/partials/variables' as *;
+
+h3{
+    color: $secondary;
+    text-align: center;
+    margin-top: 50px;
+}
 
 </style>

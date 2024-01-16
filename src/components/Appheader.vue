@@ -6,9 +6,9 @@ export default {
 
 <template>
 
-<!-- Collegamnto ai vari files Main del progetto
+
 <nav>
-  <ul>
+  <!-- <ul>
     <li>
       <router-link :to="{ name:'home' }">
       HOME
@@ -24,10 +24,9 @@ export default {
       PRICES
       </router-link>
     </li>
-  </ul>
+  </ul> -->
 </nav>
 
--->
 
 </template>
 
