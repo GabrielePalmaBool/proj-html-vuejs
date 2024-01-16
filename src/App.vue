@@ -18,8 +18,8 @@ components: {
 
 <template>
     <Appheader/>
-    <Appmain />
-    <Appfooter />
+    <Appmain/>
+    <Appfooter/>
 </template>
 
 <style lang="scss">
