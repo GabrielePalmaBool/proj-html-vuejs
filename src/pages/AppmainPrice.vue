@@ -1,5 +1,10 @@
 <script>
+import Carosello from '../components/Carosello.vue'
+
 export default {
+  components: {
+    Carosello
+  },
   name: 'AppmainPrice'
 }
 </script>
@@ -211,6 +216,7 @@ export default {
         </div>
       </div>
     </div>
+    <Carosello />
   </main>
 </template>
 
