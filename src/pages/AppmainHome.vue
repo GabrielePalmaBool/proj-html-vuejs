@@ -1,5 +1,11 @@
 <script>
+import Carosello from '../components/Carosello.vue'
+
 export default {
+  components: {
+    Carosello
+  },
+
   name: 'AppmainHome'
 }
 </script>
@@ -273,7 +279,7 @@ export default {
         </div>
       </div>
     </div>
-
+    <Carosello />
     <!-- Quarto jumbo -->
     <div class="jumbo4">
       <div class="container">
@@ -647,7 +653,6 @@ export default {
   height: 620px;
   background-size: cover;
   background-position: center bottom;
-  margin-top: 50px;
   .container {
     .row {
       justify-content: center;
