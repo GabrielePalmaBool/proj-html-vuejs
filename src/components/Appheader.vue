@@ -71,7 +71,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header {
-  background: #0000007f;
+  background: #0000003c;
   width: 100%;
   box-shadow: 0 4px 5px -4px gray;
   position: absolute;
