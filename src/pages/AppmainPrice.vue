@@ -34,7 +34,7 @@ export default {
           </div>
         </div>
         <div id="tabella-grande" class="row tabella-price">
-          <div class="col col-sm-12 col-md-12 col-lg-3">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
             <h2>Standard</h2>
             <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
@@ -42,7 +42,7 @@ export default {
             <p>Basics</p>
             <button id="book-button">BOOK NOW</button>
           </div>
-          <div class="col col-sm-12 col-md-12 col-lg-3">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
             <h2>Night</h2>
             <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
@@ -50,7 +50,7 @@ export default {
             <p>Basics</p>
             <button id="book-button">BOOK NOW</button>
           </div>
-          <div class="col col-sm-12 col-md-12 col-lg-3">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
             <h2>Auto</h2>
             <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
@@ -58,7 +58,7 @@ export default {
             <p>Basics</p>
             <button id="book-button">BOOK NOW</button>
           </div>
-          <div class="col col-sm-12 col-md-12 col-lg-3">
+          <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
             <h2>Cab</h2>
             <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
@@ -88,7 +88,7 @@ export default {
     <div class="container-fluid section-to-about">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <h1>Course Tuition Prices</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -96,26 +96,26 @@ export default {
               vehicula semper.
             </p>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
             <button>COURSE INFORMATION</button>
           </div>
         </div>
         <div id="tabella-grande" class="row tabella-price">
-          <div class="col col-md-12 col-lg-4">
+          <div class="col col-12 col-md-12 col-lg-4">
             <h2>Pass Plus</h2>
             <h2>$<span>270</span></h2>
             <p>Fully Insured</p>
             <p>99% Pass Rate</p>
             <button id="book-button">BOOK NOW</button>
           </div>
-          <div class="col col-md-12 col-lg-4">
+          <div class="col col-12 col-md-12 col-lg-4">
             <h2>Intensive</h2>
             <h2>$<span>1200</span></h2>
             <p>Fully Insured</p>
             <p>99% Pass Rate</p>
             <button id="book-button">BOOK NOW</button>
           </div>
-          <div class="col col-md-12 col-lg-4">
+          <div class="col col-12 col-md-12 col-lg-4">
             <h2>Instructor</h2>
             <h2>$<span>1800</span></h2>
             <p>Fully Insured</p>
@@ -137,7 +137,7 @@ export default {
         </div>
         <div class="row">
           <div id="section-portfolio" class="row">
-            <div class="text-center col col-md-12 col-lg-4">
+            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
               <div class="icon-portfolio">
                 <i class="fa-solid fa-car" style="color: #ffffff"></i>
               </div>
@@ -149,7 +149,7 @@ export default {
                 in, mattis eget sapien. Quisque non mollis ex.
               </p>
             </div>
-            <div class="text-center col col-md-12 col-lg-4">
+            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
               <div class="icon-portfolio">
                 <i class="fa-solid fa-signs-post" style="color: #ffffff"></i>
               </div>
@@ -161,7 +161,7 @@ export default {
                 in, mattis eget sapien. Quisque non mollis ex.
               </p>
             </div>
-            <div class="text-center col col-md-12 col-lg-4">
+            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
               <div class="icon-portfolio">
                 <i class="fa-solid fa-arrow-turn-up" style="color: #ffffff"></i>
               </div>
@@ -173,7 +173,7 @@ export default {
                 in, mattis eget sapien. Quisque non mollis ex.
               </p>
             </div>
-            <div class="text-center col col-md-12 col-lg-4">
+            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
               <div class="icon-portfolio">
                 <i
                   class="fa-solid fa-triangle-exclamation"
@@ -188,7 +188,7 @@ export default {
                 in, mattis eget sapien. Quisque non mollis ex.
               </p>
             </div>
-            <div class="text-center col col-md-12 col-lg-4">
+            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
               <div class="icon-portfolio">
                 <i class="fa-solid fa-book" style="color: #ffffff"></i>
               </div>
@@ -200,7 +200,7 @@ export default {
                 in, mattis eget sapien. Quisque non mollis ex.
               </p>
             </div>
-            <div class="text-center col col-md-12 col-lg-4">
+            <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
               <div class="icon-portfolio">
                 <i class="fa-solid fa-file-lines" style="color: #ffffff"></i>
               </div>
