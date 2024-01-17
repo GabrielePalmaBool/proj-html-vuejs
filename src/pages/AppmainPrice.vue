@@ -288,7 +288,7 @@ export default {
   p {
     color: #7799ad;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
   }
   h1 {
     font-size: 50px;
@@ -366,10 +366,10 @@ export default {
   padding: 10px;
 }
 
-// .icon-portfolio:hover {
-//   width: 105px;
-//   height: 90px;
-// }
+.icon-portfolio:hover {
+  transition: opacity 1s, transform 1s;
+  transform: scale(1.1);
+}
 
 #section-portfolio {
   margin: 50px 0 50px 0;
@@ -384,5 +384,9 @@ export default {
     color: #7799ad;
     margin-bottom: 4rem;
   }
+}
+
+a {
+  text-decoration: none;
 }
 </style>
