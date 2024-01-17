@@ -203,7 +203,9 @@ export default {
             </p>
           </div>
           <div class="col p-5">
-            <button type="button" class="btn btn-primary">MORE ABOUT US</button>
+            <button type="button" class="btn btn-primary">
+              <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
+            </button>
           </div>
         </div>
 
@@ -546,9 +548,14 @@ export default {
           color: $primary;
           border-radius: 20px;
           font-weight: bold;
+
           background-color: $quaternary;
           width: 350px;
           padding: 10px;
+
+          a {
+            text-decoration: none;
+          }
         }
       }
     }
