@@ -173,12 +173,102 @@ export default {
             <h4>REFERRAL RATE</h4>
           </div>
         </div>
+
         <div class="col p-5">
           <div class="box">
             <div class="point"></div>
             <i class="fa-regular fa-circle circleZ"></i>
             <h2 class="zero">0%</h2>
             <h4>ACCIDENT RATE</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- quinto container -->
+    <div class="container fifth">
+      <div class="row">
+        <!-- seconda riga (due colonne)  -->
+        <div class="col p-5">
+          <h2>Your Instructors</h2>
+        </div>
+
+        <!-- seconda riga (due colonne)  -->
+        <div class="row row-cols-2 secondR">
+          <div class="col p-5">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              ultrices auctor sapien id cursus. Aliquam maximus turpis in
+              vehicula semper.
+            </p>
+          </div>
+          <div class="col p-5">
+            <button type="button" class="btn btn-primary">
+              <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
+            </button>
+          </div>
+        </div>
+
+        <!-- terza riga (tre colonne)  -->
+        <div class="row row-cols-3 tirdR">
+          <div class="col p-5">
+            <div class="box">
+              <div class="avatar">
+                <img
+                  src="..\assets/homepage-main-imgavatar1.jpg"
+                  alt="immagine avatar1"
+                />
+                <div class="text">
+                  <h4>Mike Hart</h4>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col p-5">
+            <div class="box middle">
+              <div class="avatar">
+                <img
+                  src="..\assets/homepage-main-imgavatar2.jpg"
+                  alt="immagine avatar1"
+                />
+                <div class="text">
+                  <h4>John Smith</h4>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col p-5">
+            <div class="box">
+              <div class="avatar">
+                <img
+                  src="..\assets/homepage-main-imgavatar3.jpg"
+                  alt="immagine avatar1"
+                />
+                <div class="text">
+                  <h4>Angela Hart</h4>
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-x-twitter"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -322,7 +412,7 @@ export default {
         }
 
         p {
-          color: rgb(146, 167, 195);
+          color: $quintenary;
         }
       }
 
@@ -356,7 +446,7 @@ export default {
         h3 {
           margin: 10px -80px 10px 0px;
           font-size: 25px;
-          color: rgb(146, 167, 195);
+          color: $quintenary;
         }
 
         .btn-primary {
@@ -430,7 +520,7 @@ export default {
         top: 38%;
         left: 38%;
         font-size: 65px;
-        color: rgb(146, 167, 195);
+        color: $quintenary;
       }
 
       h4 {
@@ -438,7 +528,70 @@ export default {
         top: 85%;
         left: 34%;
         font-size: 25px;
-        color: rgb(146, 167, 195);
+        color: $quintenary;
+      }
+    }
+  }
+}
+
+.fifth {
+  .row {
+    justify-content: center;
+    flex-wrap: wrap;
+    .secondR {
+      .col {
+        p {
+          font-size: 20px;
+          color: $quintenary;
+        }
+        .btn-primary {
+          color: $primary;
+          border-radius: 20px;
+          font-weight: bold;
+
+          background-color: $quaternary;
+          width: 350px;
+          padding: 10px;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    .tirdR {
+      padding: 10px;
+
+      .col {
+        .box {
+          width: 420px;
+          height: 400px;
+          background-color: $primary;
+          border-radius: 10px;
+          position: relative;
+          box-shadow: 0px 15px 20px 0px #c7c7c7, 0 -5px 0px 0px green;
+
+          .avatar {
+            position: absolute;
+            width: 320px;
+            top: 8%;
+            left: 12%;
+          }
+
+          .text {
+            text-align: center;
+
+            .fa-brands {
+              font-size: 20px;
+              margin-left: 10px;
+              color: $quintenary;
+            }
+          }
+        }
+
+        .middle {
+          height: 420px;
+        }
       }
     }
   }
