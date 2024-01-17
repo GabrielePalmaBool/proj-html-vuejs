@@ -135,6 +135,8 @@ export default {
   height: auto;
   padding: 50px 0 50px 0;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 a {

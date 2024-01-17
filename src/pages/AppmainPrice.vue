@@ -26,7 +26,7 @@ export default {
             <button>MEET YOUR INSTRUCTORS</button>
           </div>
         </div>
-        <div class="row tabella-price">
+        <div id="tabella-grande" class="row tabella-price">
           <div class="col">
             <h2>Standard</h2>
             <h2>$ <span>45</span><i>hourly</i></h2>
@@ -78,7 +78,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container-fluid price-container">
+    <div class="container-fluid section-to-about">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -91,6 +91,120 @@ export default {
           </div>
           <div class="col">
             <button>MEET YOUR INSTRUCTORS</button>
+          </div>
+        </div>
+        <div id="tabella-grande" class="row tabella-price">
+          <div class="col">
+            <h2>Pass Plus</h2>
+            <h2>$ <span>270</span></h2>
+            <p>Fully Insured</p>
+            <p>99% Pass Rate</p>
+            <button id="book-button">BOOK NOW</button>
+          </div>
+          <div class="col">
+            <h2>Intensive</h2>
+            <h2>$ <span>1200</span></h2>
+            <p>Fully Insured</p>
+            <p>99% Pass Rate</p>
+            <button id="book-button">BOOK NOW</button>
+          </div>
+          <div class="col">
+            <h2>Instructor</h2>
+            <h2>$ <span>1800</span></h2>
+            <p>Fully Insured</p>
+            <p>99% Pass Rate</p>
+            <button id="book-button">BOOK NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid section-box">
+      <div class="container">
+        <div class="row text-center">
+          <h1>All Tuition Will Cover</h1>
+          <h5>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            ultrices <br />
+            auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+          </h5>
+        </div>
+        <div class="row">
+          <div id="section-portfolio" class="row">
+            <div class="text-center col-sm-12 col-md-6 col-lg-4">
+              <div class="icon-portfolio">
+                <i class="fa-solid fa-car" style="color: #ffffff"></i>
+              </div>
+              <h6>Basic Vehicle Knowledge</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tempus vulputate quam. Etiam dignissim mauris a lectus
+                consectetur mollis. Integer ipsum ante, pretium mattis accumsan
+                in, mattis eget sapien. Quisque non mollis ex.
+              </p>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-lg-4">
+              <div class="icon-portfolio">
+                <i class="fa-solid fa-signs-post" style="color: #ffffff"></i>
+              </div>
+              <h6>Highway Code</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tempus vulputate quam. Etiam dignissim mauris a lectus
+                consectetur mollis. Integer ipsum ante, pretium mattis accumsan
+                in, mattis eget sapien. Quisque non mollis ex.
+              </p>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-lg-4">
+              <div class="icon-portfolio">
+                <i class="fa-solid fa-arrow-turn-up" style="color: #ffffff"></i>
+              </div>
+              <h6>Driving Manouvers</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tempus vulputate quam. Etiam dignissim mauris a lectus
+                consectetur mollis. Integer ipsum ante, pretium mattis accumsan
+                in, mattis eget sapien. Quisque non mollis ex.
+              </p>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-lg-4">
+              <div class="icon-portfolio">
+                <i
+                  class="fa-solid fa-triangle-exclamation"
+                  style="color: #ffffff"
+                ></i>
+              </div>
+              <h6>Road Safety</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tempus vulputate quam. Etiam dignissim mauris a lectus
+                consectetur mollis. Integer ipsum ante, pretium mattis accumsan
+                in, mattis eget sapien. Quisque non mollis ex.
+              </p>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-lg-4">
+              <div class="icon-portfolio">
+                <i class="fa-solid fa-book" style="color: #ffffff"></i>
+              </div>
+              <h6>Drivers Theory Examination</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tempus vulputate quam. Etiam dignissim mauris a lectus
+                consectetur mollis. Integer ipsum ante, pretium mattis accumsan
+                in, mattis eget sapien. Quisque non mollis ex.
+              </p>
+            </div>
+            <div class="text-center col-sm-12 col-md-6 col-lg-4">
+              <div class="icon-portfolio">
+                <i class="fa-solid fa-file-lines" style="color: #ffffff"></i>
+              </div>
+              <h6>Driving Test Certification</h6>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                tempus vulputate quam. Etiam dignissim mauris a lectus
+                consectetur mollis. Integer ipsum ante, pretium mattis accumsan
+                in, mattis eget sapien. Quisque non mollis ex.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -114,6 +228,7 @@ export default {
 }
 
 .tabella-price {
+  background-color: white;
   text-align: center;
   border: 1px solid #7799ad;
   margin: 50px 0 50px 0;
@@ -133,6 +248,44 @@ export default {
   p {
     color: #7799ad;
     font-size: 20px;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  button {
+    padding: 11px 23px;
+    border-radius: 25px;
+    margin-top: 75px;
+    width: 80%;
+    color: white;
+    background-color: #7abc64;
+    border: none;
+  }
+
+  button:hover {
+    background-color: #64a64e;
+    transition: all 0.2s;
+  }
+
+  span {
+    color: #7abc64;
+    font-size: 50px;
+  }
+
+  i {
+    font-size: 15px;
+    color: #7799ad;
+  }
+}
+
+.section-to-about {
+  background-color: #f6f6f6;
+  padding: 100px 0 100px 0;
+  p {
+    color: #7799ad;
+    font-size: 20px;
+    padding: 10px;
   }
   h1 {
     font-size: 50px;
@@ -188,6 +341,39 @@ export default {
     padding-top: 40px;
     text-align: end;
     padding-right: 30px;
+  }
+}
+
+.section-box {
+  padding-top: 30px;
+  h5 {
+    color: #7799ad;
+    font-size: 25px;
+    padding-top: 15px;
+  }
+}
+.icon-portfolio {
+  background-color: #7abc64;
+  border-radius: 45px;
+  margin-left: 38%;
+  width: 95px;
+  font-size: 40px;
+  height: 85px;
+  padding: 10px;
+}
+
+#section-portfolio {
+  margin: 50px 0 50px 0;
+
+  h6 {
+    margin: 30px 0;
+    font-size: 25px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #7799ad;
+    margin-bottom: 4rem;
   }
 }
 </style>
