@@ -62,15 +62,225 @@ export default {
         <div class="row">
           <div class="col-12">
             <div class="card">
-              <div class="box-profile">
-                <img
-                  src="../assets/instructor-mikehart-600x381.jpg"
-                  alt="mike-profile"
-                />
+              <div class="row">
+                <div class="col-4">
+                  <div class="box-profile">
+                    <img
+                      src="../assets/mike-hart-about-page.jpg"
+                      alt="mike-profile"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="text-box">
+                    <div class="upper-text">
+                      <div class="credentials">
+                        <div class="name">Mike Hart</div>
+                        <div class="profession">Principle Instructor</div>
+                      </div>
+                      <div class="box-socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="profile-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                        turpis in vehicula semper. Nunc ultrices auctor sapien
+                        id cursus. Aliquam maximus turpis in vehicula semper.
+                      </p>
+                    </div>
+
+                    <div class="title-locations">LOCATIONS COVERED</div>
+                    <ul class="locations">
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>New York
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>South Carolina
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>Washington D.C
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>Florida
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                <div class="col-4">
+                  <div class="box-profile">
+                    <img
+                      src="../assets/john-smith-about-page.jpg"
+                      alt="mike-profile"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="text-box">
+                    <div class="upper-text">
+                      <div class="credentials">
+                        <div class="name">John Smith</div>
+                        <div class="profession">Course Instructor</div>
+                      </div>
+                      <div class="box-socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="profile-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                        turpis in vehicula semper. Nunc ultrices auctor sapien
+                        id cursus. Aliquam maximus turpis in vehicula semper.
+                      </p>
+                    </div>
+
+                    <div class="title-locations">LOCATIONS COVERED</div>
+                    <ul class="locations">
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>New York
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>South Carolina
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>Washington D.C
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>Florida
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="row">
+                <div class="col-4">
+                  <div class="box-profile">
+                    <img
+                      src="../assets/angela-hart-about-page.jpg"
+                      alt="mike-profile"
+                    />
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div class="text-box">
+                    <div class="upper-text">
+                      <div class="credentials">
+                        <div class="name">Angela Hart</div>
+                        <div class="profession">Driving Instructor</div>
+                      </div>
+                      <div class="box-socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+
+                    <div class="profile-description">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                        turpis in vehicula semper. Nunc ultrices auctor sapien
+                        id cursus. Aliquam maximus turpis in vehicula semper.
+                      </p>
+                    </div>
+
+                    <div class="title-locations">LOCATIONS COVERED</div>
+                    <ul class="locations">
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>New York
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>South Carolina
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>Washington D.C
+                      </li>
+                      <li class="city">
+                        <i class="fa-regular fa-circle-right"></i>Florida
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sezione Promise -->
+    <div class="promise-section">
+      <div class="container">
+        <div class="wrapper">
+          <h1>Our Promise</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula
+            semper.
+          </p>
+        </div>
+
+        <ul class="accordion">
+          <li>
+            <input type="radio" name="accordion" id="first" />
+            <label for="first">High Rate of Success</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                ultrices auctor sapien id cursus. Aliquam maximus turpis in
+                vehicula semper.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="second" />
+            <label for="second">Zero Accident Rate</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                ultrices auctor sapien id cursus. Aliquam maximus turpis in
+                vehicula semper.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <input type="radio" name="accordion" id="third" />
+            <label for="third">We're Never Late</label>
+            <div class="content">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                ultrices auctor sapien id cursus. Aliquam maximus turpis in
+                vehicula semper.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </main>
@@ -129,14 +339,13 @@ export default {
 }
 
 .team-section {
-  height: 800px;
   background-image: linear-gradient(#eef5f7, #ffff);
-  text-align: center;
-  padding: 80px 0;
+  padding: 80px 0 120px 0;
 
   .wrapper {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 
     h1 {
       font-size: 40px;
@@ -152,12 +361,165 @@ export default {
   }
 
   .card {
-    padding: 20px;
+    padding: 50px;
     border-radius: 10px;
     border: none;
+    box-shadow: 0px 20px 15px 0px #eaeaea;
+    border-top: 7px solid #7abc64;
+    margin-top: 50px;
 
-    .box-profile img {
-      width: 50%;
+    .box-profile {
+      width: 100%;
+      img {
+        width: 100%;
+        transition: 0.5s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+        box-shadow: 3px 8px 5px 3px #d6d6d6;
+        z-index: 2;
+      }
+    }
+
+    .text-box {
+      padding-left: 30px;
+      padding-top: 20px;
+
+      .upper-text {
+        display: flex;
+        justify-content: space-between;
+        .credentials {
+          margin-bottom: 30px;
+
+          .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 3px;
+          }
+
+          .profession {
+            color: #7099a5;
+          }
+        }
+
+        .box-socials {
+          margin-top: -25px;
+
+          a {
+            font-size: 20px;
+            margin-left: 20px;
+            color: #7099a5;
+          }
+        }
+      }
+
+      .profile-description p {
+        color: #7099a5;
+        font-size: 18px;
+        line-height: 37px;
+        margin-bottom: 30px;
+      }
+
+      .title-locations {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+
+      .locations {
+        list-style: none;
+        padding: 0;
+
+        .city {
+          margin-bottom: 15px;
+          color: #7099a5;
+          font-size: 17px;
+
+          i {
+            color: #7abc64;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.promise-section {
+  background-image: url(../assets/about-promise-background.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 80px 0;
+
+  .wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 25px;
+      color: #7099a5;
+      line-height: 40px;
+    }
+  }
+
+  .accordion {
+    width: 600px;
+    list-style: none;
+
+    li {
+      width: 100%;
+      margin: 20px;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #e3edf7;
+      box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    label::before {
+      content: '+';
+      margin-right: 10px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    .content {
+      color: #555;
+      padding: 0 10px;
+      line-height: 26px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s, padding 0.5s;
+    }
+
+    input[type='radio']:checked + label + .content {
+      max-height: 400px;
+      padding: 10px 10px 20px;
+    }
+
+    input[type='radio']:checked + label + .content {
+      content: '-';
     }
   }
 }
