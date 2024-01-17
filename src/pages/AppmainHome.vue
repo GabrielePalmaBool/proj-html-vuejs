@@ -133,9 +133,7 @@ export default {
                 />
               </div>
               <h3>Intensive Curse</h3>
-              <button type="button" class="btn btn-primary">
-                Intensive Course
-              </button>
+              <button type="button" class="btn btn-primary">Learn More</button>
             </div>
             <div class="col p-5">
               <div class="img">
@@ -145,8 +143,42 @@ export default {
                 />
               </div>
               <h3>Instructors</h3>
-              <button type="button" class="btn btn-primary">Instructors</button>
+              <button type="button" class="btn btn-primary">Learn More</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- immagine triangolo -->
+    <div class="TrImg">
+      <img src="..\assets/homepage-triangle-.png" alt="immagine triangolo" />
+    </div>
+
+    <!-- quarto container -->
+    <div class="container fourth">
+      <div class="row row-cols-3">
+        <div class="col p-5">
+          <div class="box">
+            <i class="fa-solid fa-circle-notch"></i>
+            <h2>95%</h2>
+            <h4>PASS RATE</h4>
+          </div>
+        </div>
+
+        <div class="col p-5">
+          <div class="box">
+            <i class="fa-regular fa-circle"></i>
+            <h2>100%</h2>
+            <h4>REFERRAL RATE</h4>
+          </div>
+        </div>
+        <div class="col p-5">
+          <div class="box">
+            <div class="point"></div>
+            <i class="fa-regular fa-circle circleZ"></i>
+            <h2 class="zero">0%</h2>
+            <h4>ACCIDENT RATE</h4>
           </div>
         </div>
       </div>
@@ -305,13 +337,20 @@ export default {
       }
     }
     .row {
-      width: 680px;
       .col {
-        width: 200px;
         text-align: center;
 
         .img {
           width: 180px;
+
+          // effetto ritaglio da sistemare
+          // overflow: clip; /* required */
+          // overflow-clip-margin: content-box;
+        }
+
+        .img:hover {
+          transition: opacity 1s, transform 1s;
+          transform: scale(1.1);
         }
 
         h3 {
@@ -329,6 +368,77 @@ export default {
           width: 155px;
           margin-left: 15px;
         }
+      }
+    }
+  }
+}
+
+.TrImg {
+  margin-top: -1px;
+}
+
+.fourth {
+  .row {
+    justify-content: center;
+    padding: 10px;
+    margin-top: -250px;
+    .box {
+      width: 420px;
+      height: 400px;
+      background-color: $primary;
+      border-radius: 10px;
+
+      position: relative;
+      box-shadow: 0px 15px 20px 0px #c7c7c7, 0 -5px 0px 0px green;
+
+      .fa-circle-notch {
+        font-size: 240px;
+        color: $quaternary;
+        position: absolute;
+        top: 17%;
+        left: 23%;
+      }
+      .fa-circle {
+        font-size: 240px;
+        color: $quaternary;
+        position: absolute;
+        top: 18%;
+        left: 26%;
+      }
+
+      .point {
+        background-color: $quaternary;
+        width: 20px;
+        height: 20px;
+        border-radius: 30px;
+        position: absolute;
+        top: 18%;
+        left: 52%;
+        z-index: 1;
+      }
+
+      .circleZ {
+        color: rgb(246, 246, 246);
+      }
+
+      .zero {
+        left: 45%;
+      }
+
+      h2 {
+        position: absolute;
+        top: 38%;
+        left: 38%;
+        font-size: 65px;
+        color: rgb(146, 167, 195);
+      }
+
+      h4 {
+        position: absolute;
+        top: 85%;
+        left: 34%;
+        font-size: 25px;
+        color: rgb(146, 167, 195);
       }
     }
   }
