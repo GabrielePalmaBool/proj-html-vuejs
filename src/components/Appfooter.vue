@@ -29,7 +29,7 @@ export default {
     <div class="container-fluid my-footer">
       <div class="container">
         <div class="row">
-          <div class="col">
+          <div class="col col-sm-12 col-md-6 col-lg-3">
             <img src="..\assets/avada-drivers-logo-1x.png" alt="" />
             <p>
               Avada Driving School is the right choice for experienced drivers
@@ -40,7 +40,7 @@ export default {
               <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
             </button>
           </div>
-          <div class="col my-col">
+          <div class="col my-col col-sm-12 col-md-6 col-lg-3">
             <h3>Driving Courses</h3>
             <p>
               <a href=""
@@ -79,7 +79,7 @@ export default {
               >
             </p>
           </div>
-          <div class="col my-col">
+          <div class="col my-col col-sm-12 col-md-6 col-lg-3">
             <h3>Contact Details</h3>
             <p>
               <i class="fa-solid fa-house" style="color: #ffffff"></i>50 North
@@ -250,6 +250,7 @@ h3 {
 .social-section {
   text-align: end;
   padding-top: 30px;
+  height: auto;
 }
 
 i {
