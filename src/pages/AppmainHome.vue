@@ -73,7 +73,7 @@ export default {
     <!-- Secondo jumbo-->
     <div class="jumbo2">
       <div class="container">
-        <div class="row row-cols-2">
+        <div class="row">
           <div class="col p-5">
             <h2>Start learning to Drive Today</h2>
             <h4>Give us a call to schedule your first drive lesson</h4>
@@ -273,6 +273,59 @@ export default {
         </div>
       </div>
     </div>
+
+    <!-- Quarto jumbo -->
+    <div class="jumbo4">
+      <div class="container">
+        <div class="row">
+          <div class="box">
+            <!-- Titolo della sezione -->
+            <h2>Latest News</h2>
+
+            <!-- Corpo della sezione -->
+            <div class="row">
+              <div class="col">
+                <div class="img">
+                  <img
+                    src="..\assets/homepage-main-blog-choosecar-700x441.jpg"
+                    alt="immagine auto4"
+                  />
+                </div>
+                <h4>What Car to Start With?</h4>
+                <p>
+                  Categories:<span>General 0 Comments</span> Views:7486 <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+              <div class="col">
+                <div class="img">
+                  <img
+                    src="..\assets/homepage-main-blogpost-10and2-700x441.jpg"
+                    alt="immagine auto5"
+                  />
+                </div>
+                <h4>Avada Driving School Expanding</h4>
+                <p class="underlined">
+                  Categories:<span>General 0 Comments</span> Views:5993 <br />
+                  Lorem ipsum dolor sit amet, consectetur adipiscing
+                </p>
+              </div>
+            </div>
+            <!-- Parte finale della sezione -->
+            <button type="button" class="btn btn-primary">
+              MORE FROM THE BLOG
+            </button>
+          </div>
+        </div>
+        <!-- Immagine traingolo bianco -->
+        <div class="imgTr2">
+          <img
+            src="..\assets/homepage-triangle-white-.png"
+            alt="immagine triangolo"
+          />
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -298,28 +351,21 @@ export default {
   height: 300px;
   background-size: cover;
   margin-top: 60px;
+  color: $primary;
 
   h2 {
     margin-top: 50px;
-    color: $primary;
     font-size: 40px;
-    display: inline-block;
-  }
-
-  h4 {
-    color: $primary;
   }
 
   .fa-phone {
     font-size: 50px;
-    color: $primary;
     vertical-align: middle;
     margin-right: 30px;
   }
 
   h5 {
     margin-top: 50px;
-    color: $primary;
     font-size: 30px;
     display: inline-block;
   }
@@ -548,7 +594,6 @@ export default {
           color: $primary;
           border-radius: 20px;
           font-weight: bold;
-
           background-color: $quaternary;
           width: 350px;
           padding: 10px;
@@ -593,6 +638,67 @@ export default {
           height: 420px;
         }
       }
+    }
+  }
+}
+
+.jumbo4 {
+  background-image: url('..\assets/homepage-main4-background.jpg');
+  height: 620px;
+  background-size: cover;
+  background-position: center bottom;
+  margin-top: 50px;
+  .container {
+    .row {
+      justify-content: center;
+      .box {
+        margin-top: -40px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        width: 1100px;
+        height: 500px;
+        text-align: center;
+        padding: 20px;
+        background-color: $primary;
+        box-shadow: 0px 0px 20px 0px #c7c7c7, 0 -5px 0px 0px rgb(88, 88, 88);
+        .img {
+          mask-image: url('..\assets/homepage-maskimg-.svg');
+          mask-size: 100%;
+          mask-position: 25% 25%;
+          width: 475px;
+        }
+        .img:hover {
+          transition: opacity 1s, transform 1s;
+          transform: scale(1.1);
+        }
+
+        h4 {
+          color: $quaternary;
+        }
+
+        p {
+          font-size: 12px;
+          color: $quintenary;
+          span {
+            color: $quaternary;
+            border-bottom-style: solid;
+            border-bottom-width: thin;
+          }
+        }
+
+        .btn-primary {
+          color: $primary;
+          border-radius: 20px;
+          font-weight: bold;
+          background-color: $quaternary;
+          width: 200px;
+          padding: 10px;
+        }
+      }
+    }
+    .imgTr2 {
+      width: 1100px;
+      margin-left: 100px;
     }
   }
 }
