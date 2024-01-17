@@ -36,7 +36,9 @@ export default {
               looking for a refresher course, or the brand new driver wanting to
               pass first time.
             </p>
-            <button class="subscribe">MORE ABOUT US</button>
+            <button class="subscribe">
+              <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
+            </button>
           </div>
           <div class="col my-col">
             <h3>Driving Courses</h3>
@@ -99,7 +101,9 @@ export default {
           <div class="col my-col">
             <h3>Book Free Class</h3>
             <img src="../assets/blogpost-ten-400x228.jpg" alt="" />
-            <button class="book-button">BOOK NOW</button>
+            <button class="book-button">
+              <router-link :to="{ name: 'prices' }">BOOK NOW</router-link>
+            </button>
           </div>
         </div>
       </div>
@@ -135,6 +139,8 @@ export default {
   height: auto;
   padding: 50px 0 50px 0;
   background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 a {
