@@ -23,13 +23,15 @@ export default {
             </p>
           </div>
           <div class="col">
-            <button>MEET YOUR INSTRUCTORS</button>
+            <button>
+              <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
+            </button>
           </div>
         </div>
         <div id="tabella-grande" class="row tabella-price">
           <div class="col">
             <h2>Standard</h2>
-            <h2>$ <span>45</span><i>hourly</i></h2>
+            <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
             <p>First lesson free</p>
             <p>Basics</p>
@@ -37,7 +39,7 @@ export default {
           </div>
           <div class="col">
             <h2>Night</h2>
-            <h2>$ <span>45</span><i>hourly</i></h2>
+            <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
             <p>First lesson free</p>
             <p>Basics</p>
@@ -45,7 +47,7 @@ export default {
           </div>
           <div class="col">
             <h2>Auto</h2>
-            <h2>$ <span>45</span><i>hourly</i></h2>
+            <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
             <p>First lesson free</p>
             <p>Basics</p>
@@ -53,7 +55,7 @@ export default {
           </div>
           <div class="col">
             <h2>Cab</h2>
-            <h2>$ <span>45</span><i>hourly</i></h2>
+            <h2>$<span>45</span><i>hourly</i></h2>
             <p>Fully Insured</p>
             <p>First lesson free</p>
             <p>Basics</p>
@@ -90,27 +92,27 @@ export default {
             </p>
           </div>
           <div class="col">
-            <button>MEET YOUR INSTRUCTORS</button>
+            <button>COURSE INFORMATION</button>
           </div>
         </div>
         <div id="tabella-grande" class="row tabella-price">
           <div class="col">
             <h2>Pass Plus</h2>
-            <h2>$ <span>270</span></h2>
+            <h2>$<span>270</span></h2>
             <p>Fully Insured</p>
             <p>99% Pass Rate</p>
             <button id="book-button">BOOK NOW</button>
           </div>
           <div class="col">
             <h2>Intensive</h2>
-            <h2>$ <span>1200</span></h2>
+            <h2>$<span>1200</span></h2>
             <p>Fully Insured</p>
             <p>99% Pass Rate</p>
             <button id="book-button">BOOK NOW</button>
           </div>
           <div class="col">
             <h2>Instructor</h2>
-            <h2>$ <span>1800</span></h2>
+            <h2>$<span>1800</span></h2>
             <p>Fully Insured</p>
             <p>99% Pass Rate</p>
             <button id="book-button">BOOK NOW</button>
@@ -261,6 +263,7 @@ export default {
     color: white;
     background-color: #7abc64;
     border: none;
+    text-decoration: none;
   }
 
   button:hover {
@@ -298,6 +301,7 @@ export default {
     color: white;
     background-color: #7abc64;
     border: none;
+    text-decoration: none;
   }
 
   button:hover {
@@ -361,6 +365,11 @@ export default {
   height: 85px;
   padding: 10px;
 }
+
+// .icon-portfolio:hover {
+//   width: 105px;
+//   height: 90px;
+// }
 
 #section-portfolio {
   margin: 50px 0 50px 0;
