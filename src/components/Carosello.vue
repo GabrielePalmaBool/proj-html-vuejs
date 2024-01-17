@@ -1,6 +1,34 @@
 <script>
 export default {
-  name: 'Carosello'
+  name: 'Carosello',
+  data() {
+    return {
+      activeUser: 0,
+      testimonial: [
+        {
+          name: 'Sophia Jones',
+          image: '../assets/testimonial-sophia.png'
+        },
+        {
+          name: 'Harold Green',
+          image: '../assets/testimonial-harold.png'
+        },
+        {
+          name: 'Grant Harvey',
+          image: '../assets/testimonial-grant.png'
+        },
+        {
+          name: 'Kate Lewis',
+          image: '../assets/testimonial-kate.png'
+        },
+        {
+          name: 'Kelly Johnson',
+          image: '../assets/testimonial-kelly.png'
+        }
+      ]
+    }
+  },
+  methods: {}
 }
 </script>
 
@@ -11,7 +39,7 @@ export default {
       <p class="text-center">
         Here’s what our happy drivers had to say about our services:
       </p>
-      <img src="../assets/testimonial-grant.png" alt="" />
+      <img src="../assets/testimonial-kelly.png" alt="" />
       <p>
         <i
           >Avada Driving School really helped build my confidence behind the
@@ -21,7 +49,9 @@ export default {
           Highly recommended.</i
         >
       </p>
-      <h3><b>Kate Lewis</b></h3>
+      <h3>
+        <b>Kelly Johnson</b>
+      </h3>
     </div>
   </div>
 </template>
