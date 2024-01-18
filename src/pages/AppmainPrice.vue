@@ -244,9 +244,10 @@ export default {
     padding: 20px;
   }
 
-  // p:hover {
-  //   background-color: #7799ad;
-  // }
+  .col:hover {
+    background-color: #e5f2fa;
+    cursor: pointer;
+  }
 }
 .price-container {
   background-color: #e5f2fa;
