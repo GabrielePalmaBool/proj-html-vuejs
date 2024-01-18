@@ -43,25 +43,37 @@ export default {
 
 <template>
   <header>
-    <div class="container">
-      <div class="logo-box">
-        <a href="#">
-          <img src="../assets/avada-drivers-logo-1x.png" alt="logo Avada" />
-        </a>
+    <div class="spam-bar">
+      <div class="container">
+        <div class="left-spam">We have a 95% Succesful Pass Rate!</div>
+
+        <div class="right-spam">
+          <i class="fa-solid fa-phone"></i> Give us a call to book your tuition!
+          1-800-555-555
+        </div>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li v-for="(link, i) in links" :key="i">
-            <router-link
-              :to="{ name: link.name }"
-              :class="activeMenu === i ? 'active' : ''"
-              @click="activeLink(i)"
-            >
-              {{ link.item }}
-            </router-link>
-          </li>
-        </ul>
-      </nav>
+    </div>
+    <div class="topbar">
+      <div class="container">
+        <div class="logo-box">
+          <a href="#">
+            <img src="../assets/avada-drivers-logo-1x.png" alt="logo Avada" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li v-for="(link, i) in links" :key="i">
+              <router-link
+                :to="{ name: link.name }"
+                :class="activeMenu === i ? 'active' : ''"
+                @click="activeLink(i)"
+              >
+                {{ link.item }}
+              </router-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 </template>
@@ -70,12 +82,34 @@ export default {
 //Scss relativo alla sola sezione di header
 @use '../styles/partials/variables' as *;
 
-header {
-  background: #0000003c;
+.spam-bar {
+  background: #333333;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0;
+  }
+
+  .left-spam,
+  .right-spam {
+    color: #7799ad;
+    font-size: 13px;
+
+    i {
+      margin-right: 10px;
+    }
+  }
+}
+
+.topbar {
+  background: #00000058;
   width: 100%;
   box-shadow: 0 4px 5px -4px gray;
   position: absolute;
-  top: 0;
+  top: 39px;
   left: 0;
 
   .container {
@@ -106,11 +140,11 @@ header {
 
           &.active,
           &:hover {
-            color: #64a64e;
+            color: #7abc64;
           }
 
           &.active {
-            border-bottom: 3px solid #64a64e;
+            border-bottom: 3px solid #7abc64;
           }
         }
       }

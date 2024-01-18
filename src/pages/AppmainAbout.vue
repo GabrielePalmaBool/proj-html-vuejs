@@ -244,43 +244,87 @@ export default {
           </p>
         </div>
 
-        <ul class="accordion">
-          <li>
-            <input type="radio" name="accordion" id="first" />
-            <label for="first">High Rate of Success</label>
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                ultrices auctor sapien id cursus. Aliquam maximus turpis in
-                vehicula semper.
-              </p>
-            </div>
-          </li>
+        <div class="row">
+          <div class="col-6">
+            <ul class="accordion">
+              <li>
+                <input type="radio" name="accordian" id="first" />
+                <label for="first">High Rate of Success</label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                    turpis in vehicula semper.
+                  </p>
+                </div>
+              </li>
 
-          <li>
-            <input type="radio" name="accordion" id="second" />
-            <label for="second">Zero Accident Rate</label>
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                ultrices auctor sapien id cursus. Aliquam maximus turpis in
-                vehicula semper.
-              </p>
-            </div>
-          </li>
+              <li>
+                <input type="radio" name="accordian" id="second" />
+                <label for="second">Zero Accident Rate</label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                    turpis in vehicula semper.
+                  </p>
+                </div>
+              </li>
 
-          <li>
-            <input type="radio" name="accordion" id="third" />
-            <label for="third">We're Never Late</label>
-            <div class="content">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                ultrices auctor sapien id cursus. Aliquam maximus turpis in
-                vehicula semper.
-              </p>
-            </div>
-          </li>
-        </ul>
+              <li>
+                <input type="radio" name="accordian" id="third" />
+                <label for="third">We're Never Late</label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                    turpis in vehicula semper.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6">
+            <ul class="accordion">
+              <li>
+                <input type="radio" name="accordian" id="fourth" />
+                <label for="fourth">Price Promise</label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                    turpis in vehicula semper.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <input type="radio" name="accordian" id="fifth" />
+                <label for="fifth">True Professionals</label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                    turpis in vehicula semper.
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <input type="radio" name="accordian" id="sixth" />
+                <label for="sixth">We Work Around You</label>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc ultrices auctor sapien id cursus. Aliquam maximus
+                    turpis in vehicula semper.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -471,55 +515,56 @@ export default {
   }
 
   .accordion {
-    width: 600px;
-    list-style: none;
+    width: 100%;
 
     li {
+      list-style: none;
       width: 100%;
       margin: 20px;
       padding: 10px;
-      border-radius: 8px;
-      background-color: #e3edf7;
+      border: 2px solid gray;
+      background: #ffff;
       box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
         -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-    }
 
-    label {
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      font-size: 18px;
-      font-weight: 500;
-      cursor: pointer;
-    }
+      input[type='radio'] {
+        display: none;
+      }
 
-    label::before {
-      content: '+';
-      margin-right: 10px;
-      font-size: 24px;
-      font-weight: 600;
-    }
+      input[type='radio']:checked + label + .content {
+        max-height: 400px;
+        padding: 10px 10px 20px;
+      }
 
-    input[type='radio'] {
-      display: none;
-    }
+      input[type='radio']:checked + label::before {
+        content: '-';
+      }
 
-    .content {
-      color: #555;
-      padding: 0 10px;
-      line-height: 26px;
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.5s, padding 0.5s;
-    }
+      label {
+        display: flex;
+        align-items: center;
+        color: #7abc64;
+        font-size: 18px;
+        font-weight: 600;
+        cursor: pointer;
+      }
 
-    input[type='radio']:checked + label + .content {
-      max-height: 400px;
-      padding: 10px 10px 20px;
-    }
+      label::before {
+        content: '+';
+        margin-right: 15px;
+        font-size: 24px;
+        font-weight: 700;
+        color: gray;
+      }
 
-    input[type='radio']:checked + label + .content {
-      content: '-';
+      .content {
+        color: #555;
+        padding: 0 10px;
+        line-height: 26px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s, padding 0.3s;
+      }
     }
   }
 }
