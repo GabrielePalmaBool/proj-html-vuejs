@@ -74,8 +74,8 @@ export default {
                 ><i
                   class="fa-solid fa-circle-arrow-right"
                   style="color: #7abc64"
-                ></i
-                ><span>Instructor Training</span></a
+                ></i>
+                <span>Instructor Training</span></a
               >
             </p>
           </div>
@@ -147,6 +147,10 @@ export default {
 
 a {
   text-decoration: none;
+  color: white;
+}
+
+span {
   color: $septenary;
 }
 
