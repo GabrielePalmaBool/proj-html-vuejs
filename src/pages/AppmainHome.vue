@@ -87,7 +87,7 @@ export default {
     <div class="jumbo3">
       <div class="container">
         <div class="row row-cols-2">
-          <div class="col col-sm-12 col-md-12 col-lg-6 p-5">
+          <div class="col col-lg-5 p-5">
             <div class="box">
               <div class="subbox">
                 <img
@@ -362,12 +362,12 @@ export default {
 
       .main-pharagraph {
         font-size: 25px;
-        color: $septenary;
+        color: #7099a5;
         line-height: 40px;
       }
 
       .sub-pharagraph {
-        color: $septenary;
+        color: #7099a5;
         font-size: 17px;
         line-height: 30px;
         margin-bottom: 25px;
@@ -375,8 +375,7 @@ export default {
     }
     .right {
       margin-top: -40px;
-      display: flex;
-      flex-direction: column;
+
       .box {
         border-radius: 10px;
         width: 475px;
@@ -460,6 +459,9 @@ export default {
         border-radius: 20px;
         font-weight: bold;
       }
+      .btn-primary:hover {
+        background-color: rgb(70, 110, 57);
+      }
     }
     .row {
       .col {
@@ -493,6 +495,10 @@ export default {
           width: 155px;
           margin-left: 15px;
         }
+        .btn-primary:hover {
+          color: $octarium;
+          border-color: $octarium;
+        }
       }
     }
   }
@@ -504,6 +510,7 @@ export default {
 
 .fourth {
   .row {
+    justify-content: center;
     padding: 10px;
     margin-top: -250px;
     .box {
@@ -551,9 +558,9 @@ export default {
 
       h2 {
         position: absolute;
-        top: 38%;
-        left: 38%;
-        font-size: 65px;
+        top: 40%;
+        left: 40%;
+        font-size: 50px;
         color: $quintenary;
       }
 
@@ -589,6 +596,9 @@ export default {
           a {
             text-decoration: none;
           }
+        }
+        .btn-primary:hover {
+          background-color: rgb(70, 110, 57);
         }
       }
     }
