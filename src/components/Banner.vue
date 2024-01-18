@@ -57,6 +57,12 @@ export default {
         margin-right: 30px;
       }
     }
+
+    @media all and (max-width: 1000px) {
+      h2 {
+        text-align: start;
+      }
+    }
   }
 }
 </style>

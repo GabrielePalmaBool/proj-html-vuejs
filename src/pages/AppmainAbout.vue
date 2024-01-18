@@ -23,7 +23,7 @@ export default {
       <div class="mission-section">
         <div class="row">
           <!-- Colonna di sinistra -->
-          <div class="col-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <div class="left-part">
               <h2>Mission Statement</h2>
               <p class="main-pharagraph">
@@ -41,7 +41,7 @@ export default {
             </div>
           </div>
           <!-- Colonna di destra -->
-          <div class="col-6">
+          <div class="col-lg-6">
             <div class="right-part">
               <div class="box-mike-img">
                 <img
@@ -70,7 +70,7 @@ export default {
           <div class="col-12">
             <div class="card">
               <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
                     <img
                       src="../assets/mike-hart-about-page.jpg"
@@ -78,7 +78,7 @@ export default {
                     />
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-12 col-lg-8">
                   <div class="text-box">
                     <div class="upper-text">
                       <div class="credentials">
@@ -127,7 +127,7 @@ export default {
           <div class="col-12">
             <div class="card">
               <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
                     <img
                       src="../assets/john-smith-about-page.jpg"
@@ -135,7 +135,7 @@ export default {
                     />
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-12 col-lg-8">
                   <div class="text-box">
                     <div class="upper-text">
                       <div class="credentials">
@@ -184,7 +184,7 @@ export default {
           <div class="col-12">
             <div class="card">
               <div class="row">
-                <div class="col-4">
+                <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
                     <img
                       src="../assets/angela-hart-about-page.jpg"
@@ -192,7 +192,7 @@ export default {
                     />
                   </div>
                 </div>
-                <div class="col-8">
+                <div class="col-sm-12 col-md-12 col-lg-8">
                   <div class="text-box">
                     <div class="upper-text">
                       <div class="credentials">
@@ -252,7 +252,7 @@ export default {
         </div>
 
         <div class="row">
-          <div class="col-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <ul class="accordion">
               <li>
                 <input type="radio" name="accordian" id="first" />
@@ -292,7 +292,7 @@ export default {
             </ul>
           </div>
 
-          <div class="col-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <ul class="accordion">
               <li>
                 <input type="radio" name="accordian" id="fourth" />
@@ -392,6 +392,12 @@ export default {
       margin-left: 70px;
     }
   }
+
+  @media all and (max-width: 1000px) {
+    .right-part {
+      display: none;
+    }
+  }
 }
 
 .team-section {
@@ -460,8 +466,6 @@ export default {
         }
 
         .box-socials {
-          margin-top: -25px;
-
           a {
             font-size: 20px;
             margin-left: 20px;
@@ -532,8 +536,8 @@ export default {
     li {
       list-style: none;
       width: 100%;
-      margin: 20px;
       padding: 10px;
+      margin-bottom: 20px;
       border: 2px solid gray;
       background: #ffff;
       box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
