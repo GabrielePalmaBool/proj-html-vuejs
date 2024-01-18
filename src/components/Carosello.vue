@@ -34,8 +34,6 @@ export default {
     changeNexImg() {
       this.activeUser--
 
-      console.log(this.activeUser)
-
       if (this.activeUser < 0) {
         this.activeUser = this.testimonial.length - 1
       }
@@ -43,8 +41,6 @@ export default {
 
     changePrevImg() {
       this.activeUser++
-
-      console.log(this.activeUser)
 
       if (this.activeUser > this.testimonial.length - 1) {
         this.activeUser = 0
@@ -54,12 +50,13 @@ export default {
     // Funzione intervallo
     IntervalImg() {
       this.timer = setInterval(this.changeNexImg, 2000)
+      console.log('ok1')
     },
 
     // Funzione stop-intervallo se si va sopra con il mouse
     StopAutoPlay() {
       clearInterval(this.timer)
-
+      console.log('ok')
       this.timer = 0
     }
   },
@@ -76,20 +73,19 @@ export default {
       <p class="text-center">
         Here’s what our happy drivers had to say about our services:
       </p>
-      <div
-        class="slider-wrapper"
-        tabindex="0"
-        id="app"
-        @mouseover="StopAutoPlay"
-        @mouseout="IntervalImg"
-      >
+      <div class="slider-wrapper" tabindex="0" id="app">
         <!-- ciclo for  -->
         <div
           v-for="(item, image) in testimonial"
           :class="image === 0 ? 'active' : 'none'"
         >
-          <img :src="testimonial[activeUser].image" :alt="image" />
-
+          <!-- quando vado sopra l'immagine con il cursore questa si bloccherà -->
+          <img
+            :src="testimonial[activeUser].image"
+            :alt="image"
+            @mouseover="StopAutoPlay"
+            @mouseout="IntervalImg"
+          />
           <p>
             <i
               >Avada Driving School really helped build my confidence behind the
