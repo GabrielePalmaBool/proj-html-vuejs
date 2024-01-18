@@ -1,9 +1,12 @@
 <script>
+// Import componenti
 import Carosello from '../components/Carosello.vue'
+import Banner from '../components/Banner.vue'
 
 export default {
   components: {
-    Carosello
+    Carosello,
+    Banner
   },
 
   name: 'AppmainHome'
@@ -76,21 +79,8 @@ export default {
       </div>
     </div>
 
-    <!-- Secondo jumbo-->
-    <div class="jumbo2">
-      <div class="container">
-        <div class="row">
-          <div class="col p-5">
-            <h2>Start learning to Drive Today</h2>
-            <h4>Give us a call to schedule your first drive lesson</h4>
-          </div>
-          <div class="col p-5">
-            <i class="fa-solid fa-phone"></i>
-            <h5>1-800-555-555</h5>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Componente banner-->
+    <Banner />
 
     <!-- Terzo jumbo-->
     <div class="jumbo3">
@@ -279,7 +269,10 @@ export default {
         </div>
       </div>
     </div>
+
+    <!-- Componente Carosello -->
     <Carosello />
+
     <!-- Quarto jumbo -->
     <div class="jumbo4">
       <div class="container">
@@ -349,31 +342,6 @@ export default {
   h1 {
     font-size: 70px;
     margin-top: 280px;
-  }
-}
-
-.jumbo2 {
-  background-image: url('..\assets/homepage-main2-background.jpg');
-  height: 300px;
-  background-size: cover;
-  margin-top: 60px;
-  color: $primary;
-
-  h2 {
-    margin-top: 50px;
-    font-size: 40px;
-  }
-
-  .fa-phone {
-    font-size: 50px;
-    vertical-align: middle;
-    margin-right: 30px;
-  }
-
-  h5 {
-    margin-top: 50px;
-    font-size: 30px;
-    display: inline-block;
   }
 }
 

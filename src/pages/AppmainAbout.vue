@@ -563,7 +563,7 @@ export default {
         line-height: 26px;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s, padding 0.3s;
+        transition: max-height 0.4s, padding 0.4s;
       }
     }
   }
