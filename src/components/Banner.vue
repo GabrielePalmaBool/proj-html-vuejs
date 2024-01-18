@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Carosello'
+  name: 'Banner'
 }
 </script>
 
@@ -28,7 +28,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .section-telephone {
-  background-image: url('..\assets/prices-hero-background.jpg');
+  background-image: url('../assets/horizontal-cta-background.jpg');
   color: white;
   height: auto;
   background-size: cover;

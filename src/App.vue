@@ -4,7 +4,9 @@ import Appheader from './components/Appheader.vue'
 
 import Appfooter from './components/Appfooter.vue'
 
-import Carosello from './components/Carosello.vue'
+// import Carosello from './components/Carosello.vue'
+
+// import Banner from './components/Banner.vue'
 
 import { RouterView } from 'vue-router'
 
@@ -12,7 +14,8 @@ export default {
   components: {
     Appheader,
     Appfooter,
-    Carosello,
+    // Carosello,
+    // Banner,
     RouterView
   }
 }
