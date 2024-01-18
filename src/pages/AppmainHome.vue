@@ -200,7 +200,9 @@ export default {
           </div>
           <div class="col p-5">
             <button type="button" class="btn btn-primary">
-              <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
+              <router-link :to="{ name: 'about', activeMenu: 1 }"
+                >MORE ABOUT US</router-link
+              >
             </button>
           </div>
         </div>

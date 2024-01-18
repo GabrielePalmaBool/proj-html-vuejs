@@ -50,13 +50,12 @@ export default {
     // Funzione intervallo
     IntervalImg() {
       this.timer = setInterval(this.changeNexImg, 2000)
-      console.log('ok1')
     },
 
     // Funzione stop-intervallo se si va sopra con il mouse
     StopAutoPlay() {
       clearInterval(this.timer)
-      console.log('ok')
+
       this.timer = 0
     }
   },

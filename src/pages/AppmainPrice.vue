@@ -12,11 +12,14 @@ export default {
 
 <template>
   <main>
+    <!-- Jumbotron -->
     <div class="jumbo">
       <div class="container">
         <h1>Prices</h1>
       </div>
     </div>
+
+    <!-- Container con i prezzi -->
     <div class="container-fluid price-container">
       <div class="container">
         <div class="row">
@@ -30,12 +33,14 @@ export default {
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <button>
+              <!-- Utilizzo Button per cambiare pagina tramite router -->
               <router-link :to="{ name: 'about' }"
                 >MEET YOUR INSTRUCTORS</router-link
               >
             </button>
           </div>
         </div>
+        <!-- Sezioni tabelle prezzi -->
         <div id="tabella-grande" class="row tabella-price">
           <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
             <h2>Standard</h2>
@@ -72,7 +77,9 @@ export default {
         </div>
       </div>
     </div>
+    <!-- Utilizzo componente Banner -->
     <Banner />
+    <!-- Inizio seconda tabella prezzi -->
     <div class="container-fluid section-to-about">
       <div class="container">
         <div class="row">
@@ -88,6 +95,7 @@ export default {
             <button>COURSE INFORMATION</button>
           </div>
         </div>
+        <!-- Sezioni tabelle singole -->
         <div id="tabella-grande" class="row tabella-price">
           <div class="col col-12 col-md-12 col-lg-4">
             <h2>Pass Plus</h2>
@@ -123,6 +131,7 @@ export default {
             semper.
           </h5>
         </div>
+        <!-- Inizio sezioni portfolio -->
         <div class="row">
           <div id="section-portfolio" class="row">
             <div class="text-center col-12 col-sm-12 col-md-12 col-lg-4">
@@ -204,6 +213,7 @@ export default {
         </div>
       </div>
     </div>
+    <!-- Utilizzo componente carosello -->
     <Carosello />
   </main>
 </template>
