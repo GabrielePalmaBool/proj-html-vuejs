@@ -29,11 +29,12 @@ export default {
         <div class="col left">
           <h2>Get Behind the Wheel</h2>
 
-          <p>
+          <p class="main-pharagraph">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
             ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula
-            semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /><br />
-
+            semper.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <p class="sub-pharagraph">
             Nunc ultrices auctor sapien id cursus. Aliquam maximus turpis in
             vehicula semper. Fusce et ultrices libero, at suscipit lacus. Sed
             vitae fringilla nibh. Nunc ultrices auctor sapien id cursus. Aliquam
@@ -341,6 +342,7 @@ export default {
 
   h1 {
     font-size: 70px;
+    font-weight: 700;
     margin-top: 280px;
   }
 }
@@ -350,13 +352,25 @@ export default {
     .left {
       display: flex;
       flex-direction: column;
-      padding: 50px;
+      margin-top: 70px;
       h2 {
         color: $terziary;
-        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 40px;
       }
-      p {
-        text-align: left;
+
+      .main-pharagraph {
+        font-size: 25px;
+        color: #7099a5;
+        line-height: 40px;
+      }
+
+      .sub-pharagraph {
+        color: #7099a5;
+        font-size: 17px;
+        line-height: 30px;
+        margin-bottom: 25px;
       }
     }
     .right {
@@ -366,11 +380,12 @@ export default {
       .box {
         border-radius: 10px;
         width: 475px;
-        height: 500px;
+        height: 540px;
         text-align: center;
         padding: 20px;
         background-color: $primary;
         box-shadow: 0px 25px 20px 0px #c7c7c7;
+        margin-bottom: 70px;
 
         h2 {
           margin-top: 20px;

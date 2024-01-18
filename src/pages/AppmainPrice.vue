@@ -20,7 +20,7 @@ export default {
     <div class="container-fluid price-container">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-sm-12 col-md-12 col-lg-8">
             <h1>Hourly Tuition Prices</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -28,7 +28,7 @@ export default {
               vehicula semper.
             </p>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="col-sm-12 col-md-12 col-lg-4 content-left">
             <button>
               <router-link :to="{ name: 'about' }"
                 >MEET YOUR INSTRUCTORS</router-link
@@ -76,7 +76,7 @@ export default {
     <div class="container-fluid section-to-about">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-8">
             <h1>Course Tuition Prices</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -84,7 +84,7 @@ export default {
               vehicula semper.
             </p>
           </div>
-          <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 content-left">
             <button>COURSE INFORMATION</button>
           </div>
         </div>
@@ -212,14 +212,16 @@ export default {
 @use '../styles/partials/variables' as *;
 .jumbo {
   background-image: url('..\assets/prices-hero-background.jpg');
-  height: 350px;
+  height: 380px;
   background-size: cover;
-  color: $primary;
-  padding-top: 50px;
+  background-position: bottom;
+  color: #ffff;
 
   h1 {
     font-size: 70px;
-    margin-top: 130px;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
   }
 }
 
@@ -239,78 +241,105 @@ export default {
   // }
 }
 .price-container {
-  background-color: #e5f2fa;
-  padding: 100px 0 100px 0;
-  p {
-    color: $septenary;
-    font-size: 20px;
-    padding: 10px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  button {
-    padding: 11px 23px;
-    border-radius: 25px;
-    margin-top: 75px;
-    width: 80%;
-    color: $primary;
-    background-color: #7abc64;
-    border: none;
-    text-decoration: none;
-  }
+  background-color: #eef5f7;
+  padding: 80px 0 80px 0;
 
-  button:hover {
-    background-color: #64a64e;
-    transition: all 0.2s;
-  }
+  .row {
+    display: flex;
+    align-items: center;
 
-  span {
-    color: #7abc64;
-    font-size: 50px;
-  }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
 
-  i {
-    font-size: 15px;
-    color: $septenary;
+    p {
+      color: $septenary;
+      font-size: 25px;
+    }
+
+    .content-left {
+      display: flex;
+      justify-content: end;
+
+      button {
+        padding: 11px 23px;
+        border-radius: 25px;
+        width: 80%;
+        color: $primary;
+        font-weight: 700;
+        background-color: #7abc64;
+        border: none;
+        text-decoration: none;
+      }
+
+      button:hover {
+        background-color: #64a64e;
+        transition: all 0.2s;
+      }
+    }
+
+    span {
+      color: #7abc64;
+      font-size: 50px;
+    }
+
+    i {
+      font-size: 15px;
+      color: $septenary;
+    }
   }
 }
 
 .section-to-about {
   background-color: #f6f6f6;
-  padding: 100px 0 100px 0;
-  p {
-    color: $septenary;
-    font-size: 20px;
-    padding: 5px;
-  }
-  h1 {
-    font-size: 50px;
-  }
-  button {
-    padding: 11px 23px;
-    border-radius: 25px;
-    margin-top: 75px;
-    width: 80%;
-    color: $primary;
-    background-color: #7abc64;
-    border: none;
-    text-decoration: none;
-  }
+  padding: 80px 0 80px 0;
 
-  button:hover {
-    background-color: #64a64e;
-    transition: all 0.2s;
-  }
+  .row {
+    display: flex;
+    align-items: center;
 
-  span {
-    color: #7abc64;
-    font-size: 50px;
-  }
+    p {
+      color: $septenary;
+      font-size: 25px;
+    }
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
 
-  i {
-    font-size: 15px;
-    color: $septenary;
+    .content-left {
+      display: flex;
+      justify-content: end;
+
+      button {
+        padding: 11px 23px;
+        border-radius: 25px;
+        width: 80%;
+        font-weight: 700;
+        color: $primary;
+        background-color: #7abc64;
+        border: none;
+        text-decoration: none;
+      }
+
+      button:hover {
+        background-color: #64a64e;
+        transition: all 0.2s;
+      }
+    }
+
+    span {
+      color: #7abc64;
+      font-size: 50px;
+    }
+
+    i {
+      font-size: 15px;
+      color: $septenary;
+    }
   }
 }
 
@@ -344,14 +373,17 @@ export default {
 }
 
 .section-box {
-  padding-top: 30px;
+  padding: 120px 0 50px 0;
+
   h1 {
-    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
   }
   h5 {
     color: $septenary;
     font-size: 25px;
-    padding-top: 15px;
+    line-height: 40px;
   }
 }
 .icon-portfolio {
@@ -360,8 +392,9 @@ export default {
   margin-left: 38%;
   width: 95px;
   font-size: 40px;
-  height: 85px;
-  padding: 10px;
+  height: 90px;
+  padding: 15px;
+  cursor: pointer;
 }
 
 .icon-portfolio:hover {
@@ -379,8 +412,9 @@ export default {
 
   p {
     font-size: 18px;
-    color: $sextenary;
+    color: rgb(130, 117, 117);
     margin-bottom: 4rem;
+    line-height: 30px;
   }
 }
 

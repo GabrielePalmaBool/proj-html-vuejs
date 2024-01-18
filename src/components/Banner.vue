@@ -32,12 +32,31 @@ export default {
   color: white;
   height: auto;
   background-size: cover;
+  background-position: bottom;
   padding-top: 70px;
   padding-bottom: 70px;
-  h2 {
-    padding-top: 40px;
-    text-align: end;
-    padding-right: 30px;
+
+  .row {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    h3 {
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    h2 {
+      text-align: end;
+
+      .fa-solid {
+        margin-right: 30px;
+      }
+    }
   }
 }
 </style>

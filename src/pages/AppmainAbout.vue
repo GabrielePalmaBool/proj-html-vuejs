@@ -1,6 +1,13 @@
 <script>
+import Banner from '../components/Banner.vue'
+import Carosello from '../components/Carosello.vue'
+
 export default {
-  name: 'AppmainAbout'
+  name: 'AppmainAbout',
+  components: {
+    Banner,
+    Carosello
+  }
 }
 </script>
 
@@ -327,6 +334,9 @@ export default {
         </div>
       </div>
     </div>
+
+    <Banner />
+    <Carosello />
   </main>
 </template>
 
@@ -337,14 +347,15 @@ export default {
 .jumbotron {
   background-image: url(../assets/default-ptb-retina.jpg);
   background-size: cover;
-  height: 400px;
+  background-position: bottom;
+  height: 380px;
   color: #ffff;
 
   h1 {
     font-size: 70px;
     font-weight: bold;
     position: absolute;
-    top: 280px;
+    top: 300px;
   }
 }
 
@@ -356,7 +367,7 @@ export default {
 
     h2 {
       font-size: 40px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 40px;
     }
 
@@ -370,6 +381,7 @@ export default {
       color: #7099a5;
       font-size: 17px;
       line-height: 30px;
+      margin-bottom: 25px;
     }
   }
 
@@ -393,7 +405,7 @@ export default {
 
     h1 {
       font-size: 40px;
-      font-weight: 600;
+      font-weight: 700;
       margin-bottom: 40px;
     }
 
@@ -438,7 +450,7 @@ export default {
 
           .name {
             font-size: 28px;
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 3px;
           }
 
@@ -558,7 +570,7 @@ export default {
       }
 
       .content {
-        color: #555;
+        color: #7099a5;
         padding: 0 10px;
         line-height: 26px;
         max-height: 0;

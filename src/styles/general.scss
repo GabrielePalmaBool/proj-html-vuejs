@@ -3,12 +3,20 @@
 //importo bootstrap dopo averlo installato
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+// Fonts => npm install @fontsource-variable/mulish
+@import 'node_modules/@fontsource-variable/mulish/index.css';
+@import 'node_modules/@fontsource-variable/mulish/wght.css';
+
 // GENERAL
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
 }
 
 img {
