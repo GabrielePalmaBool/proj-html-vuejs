@@ -681,6 +681,7 @@ export default {
           background-color: $quaternary;
           width: 200px;
           padding: 10px;
+          font-size: 15px;
         }
       }
     }
