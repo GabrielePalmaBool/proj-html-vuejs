@@ -4,31 +4,68 @@ export default {
   data() {
     return {
       activeUser: 0,
+      timer: 0,
+
       testimonial: [
         {
           name: 'Sophia Jones',
-          image: '../assets/testimonial-sophia.png'
+          image: 'src/assets/testimonial-sophia.png'
         },
         {
           name: 'Harold Green',
-          image: '../assets/testimonial-harold.png'
+          image: 'src/assets/testimonial-harold.png'
         },
         {
           name: 'Grant Harvey',
-          image: '../assets/testimonial-grant.png'
+          image: 'src/assets/testimonial-grant.png'
         },
         {
           name: 'Kate Lewis',
-          image: '../assets/testimonial-kate.png'
+          image: 'src/assets/testimonial-kate.png'
         },
         {
           name: 'Kelly Johnson',
-          image: '../assets/testimonial-kelly.png'
+          image: 'src/assets/testimonial-kelly.png'
         }
       ]
     }
   },
-  methods: {}
+  methods: {
+    changeNexImg() {
+      this.activeUser--
+
+      console.log(this.activeUser)
+
+      if (this.activeUser < 0) {
+        this.activeUser = this.testimonial.length - 1
+      }
+    },
+
+    changePrevImg() {
+      this.activeUser++
+
+      console.log(this.activeUser)
+
+      if (this.activeUser > this.testimonial.length - 1) {
+        this.activeUser = 0
+      }
+    },
+
+    // Funzione intervallo
+    IntervalImg() {
+      this.timer = setInterval(this.changeNexImg, 2000)
+    },
+
+    // Funzione stop-intervallo se si va sopra con il mouse
+    StopAutoPlay() {
+      clearInterval(this.timer)
+
+      this.timer = 0
+    }
+  },
+  mounted() {
+    this.IntervalImg()
+  }
 }
 </script>
 
@@ -39,19 +76,35 @@ export default {
       <p class="text-center">
         Here’s what our happy drivers had to say about our services:
       </p>
-      <img src="../assets/testimonial-kelly.png" alt="" />
-      <p>
-        <i
-          >Avada Driving School really helped build my confidence behind the
-          <br />
-          wheel and with driving in general, and they got me a first time pass!
-          <br />
-          Highly recommended.</i
+      <div
+        class="slider-wrapper"
+        tabindex="0"
+        id="app"
+        @mouseover="StopAutoPlay"
+        @mouseout="IntervalImg"
+      >
+        <!-- ciclo for  -->
+        <div
+          v-for="(item, image) in testimonial"
+          :class="image === 0 ? 'active' : 'none'"
         >
-      </p>
-      <h3>
-        <b>Kelly Johnson</b>
-      </h3>
+          <img :src="testimonial[activeUser].image" :alt="image" />
+
+          <p>
+            <i
+              >Avada Driving School really helped build my confidence behind the
+              <br />
+              wheel and with driving in general, and they got me a first time
+              pass!
+              <br />
+              Highly recommended.</i
+            >
+          </p>
+          <h3>
+            <b>{{ testimonial[activeUser].name }}</b>
+          </h3>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -79,6 +132,12 @@ export default {
   h3 {
     font-size: 20px;
     color: #7799ad;
+  }
+
+  .slider-wrapper {
+    .none {
+      display: none;
+    }
   }
 }
 </style>

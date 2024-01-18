@@ -29,7 +29,7 @@ export default {
     <div class="container-fluid my-footer">
       <div class="container">
         <div class="row">
-          <div class="col col-sm-12 col-md-6 col-lg-3">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-3">
             <img src="..\assets/avada-drivers-logo-1x.png" alt="" />
             <p>
               Avada Driving School is the right choice for experienced drivers
@@ -40,7 +40,7 @@ export default {
               <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
             </button>
           </div>
-          <div class="col my-col col-sm-12 col-md-6 col-lg-3">
+          <div class="col-12 my-col col-sm-12 col-md-6 col-lg-3">
             <h3>Driving Courses</h3>
             <p>
               <a href=""
@@ -79,7 +79,7 @@ export default {
               >
             </p>
           </div>
-          <div class="col my-col col-sm-12 col-md-6 col-lg-3">
+          <div class="col-12 my-col col-sm-12 col-md-6 col-lg-3">
             <h3>Contact Details</h3>
             <p>
               <i class="fa-solid fa-house" style="color: #ffffff"></i>50 North
@@ -98,7 +98,7 @@ export default {
               >Mon to Sat: 8 am - 5 pm
             </p>
           </div>
-          <div class="col my-col">
+          <div class="col-12 my-col col-sm-12 col-md-6 col-lg-3">
             <h3>Book Free Class</h3>
             <img src="../assets/blogpost-ten-400x228.jpg" alt="" />
             <button class="book-button">
@@ -111,14 +111,16 @@ export default {
     <div class="container-fluid last-footer">
       <div class="container">
         <div class="row">
-          <div class="col my-col-2">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6 my-col-2">
             <p>
               © Copyright 2012 - 2024 | Avada Theme by
               <a class="link-footer" href="">ThemeFusion</a> | All Rights
               Reserved | Powered by <a class="link-footer" href="">WordPress</a>
             </p>
           </div>
-          <div class="col social-section">
+          <div
+            class="col col-12 col-sm-12 col-md-6 col-lg-6 my-col-2 social-section"
+          >
             <i class="fa-brands fa-facebook-f" style="color: #888888"></i>
             <i class="fa-brands fa-x-twitter" style="color: #888888"></i>
             <i class="fa-brands fa-youtube" style="color: #888888"></i>
