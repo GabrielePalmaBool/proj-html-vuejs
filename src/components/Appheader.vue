@@ -36,9 +36,6 @@ export default {
   methods: {
     activeLink(i) {
       this.activeMenu = i
-      let pippo = window.location.href
-
-      console.log(i)
     }
   }
 }
