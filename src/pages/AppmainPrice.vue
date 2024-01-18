@@ -1,9 +1,10 @@
 <script>
 import Carosello from '../components/Carosello.vue'
-
+import Banner from '../components/Banner.vue'
 export default {
   components: {
-    Carosello
+    Carosello,
+    Banner
   },
   name: 'AppmainPrice'
 }
@@ -71,22 +72,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="container-fluid section-telephone">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h1>Start Learning to Drive Today</h1>
-            <h3>Give us a call to schedule your first driving lesson</h3>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-6">
-            <h2>
-              <i class="fa-solid fa-phone" style="color: #ffffff"></i
-              >1-800-555-555
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Banner />
     <div class="container-fluid section-to-about">
       <div class="container">
         <div class="row">
