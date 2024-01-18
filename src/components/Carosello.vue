@@ -66,7 +66,7 @@ export default {
 </script>
 
 <template>
-  <div class="carosello container-fluid">
+  <div class="carosello">
     <div class="container text-center">
       <h1 class="text-center">Testimonials</h1>
       <p class="text-center">
@@ -109,7 +109,6 @@ export default {
 @use '../styles/partials/variables' as *;
 .carosello {
   background-image: url('../assets/testimonial-background.jpg');
-  height: auto;
   background-size: cover;
   padding: 50px 0;
   img {

@@ -87,7 +87,7 @@ export default {
     <div class="jumbo3">
       <div class="container">
         <div class="row row-cols-2">
-          <div class="col col-sm-12 col-md-12 col-lg-6 p-5">
+          <div class="col col-lg-5 p-5">
             <div class="box">
               <div class="subbox">
                 <img
@@ -362,12 +362,12 @@ export default {
 
       .main-pharagraph {
         font-size: 25px;
-        color: $septenary;
+        color: #7099a5;
         line-height: 40px;
       }
 
       .sub-pharagraph {
-        color: $septenary;
+        color: #7099a5;
         font-size: 17px;
         line-height: 30px;
         margin-bottom: 25px;
@@ -504,6 +504,7 @@ export default {
 
 .fourth {
   .row {
+    justify-content: center;
     padding: 10px;
     margin-top: -250px;
     .box {
