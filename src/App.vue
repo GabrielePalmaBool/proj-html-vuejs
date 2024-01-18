@@ -4,15 +4,13 @@ import Appheader from './components/Appheader.vue'
 
 import Appfooter from './components/Appfooter.vue'
 
-import Carosello from './components/Carosello.vue'
-
 import { RouterView } from 'vue-router'
 
 export default {
   components: {
     Appheader,
     Appfooter,
-    Carosello,
+
     RouterView
   }
 }
