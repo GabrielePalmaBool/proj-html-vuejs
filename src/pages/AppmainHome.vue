@@ -375,8 +375,7 @@ export default {
     }
     .right {
       margin-top: -40px;
-      display: flex;
-      flex-direction: column;
+
       .box {
         border-radius: 10px;
         width: 475px;
@@ -460,6 +459,9 @@ export default {
         border-radius: 20px;
         font-weight: bold;
       }
+      .btn-primary:hover {
+        background-color: rgb(70, 110, 57);
+      }
     }
     .row {
       .col {
@@ -492,6 +494,10 @@ export default {
           border: 2px solid rgb(119, 153, 173);
           width: 155px;
           margin-left: 15px;
+        }
+        .btn-primary:hover {
+          color: $octarium;
+          border-color: $octarium;
         }
       }
     }
@@ -552,9 +558,9 @@ export default {
 
       h2 {
         position: absolute;
-        top: 38%;
-        left: 38%;
-        font-size: 65px;
+        top: 40%;
+        left: 40%;
+        font-size: 50px;
         color: $quintenary;
       }
 
@@ -590,6 +596,9 @@ export default {
           a {
             text-decoration: none;
           }
+        }
+        .btn-primary:hover {
+          background-color: rgb(70, 110, 57);
         }
       }
     }
