@@ -119,8 +119,8 @@ export default {
           <h1>All Tuition Will Cover</h1>
           <h5>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            ultrices <br />
-            auctor sapien id cursus. Aliquam maximus turpis in vehicula semper.
+            ultrices auctor sapien id cursus. Aliquam maximus turpis in vehicula
+            semper.
           </h5>
         </div>
         <div class="row">
