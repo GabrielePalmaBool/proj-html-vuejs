@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'Carosello'
+  name: 'Banner'
 }
 </script>
 
