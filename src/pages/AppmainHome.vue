@@ -25,7 +25,7 @@ export default {
 
     <!-- Primo container -->
     <div class="container first">
-      <div class="row row-cols-2">
+      <div class="row">
         <div class="col left">
           <h2>Get Behind the Wheel</h2>
 
@@ -87,7 +87,7 @@ export default {
     <div class="jumbo3">
       <div class="container">
         <div class="row row-cols-2">
-          <div class="col p-5">
+          <div class="col col-sm-12 col-md-12 col-lg-6 p-5">
             <div class="box">
               <div class="subbox">
                 <img
@@ -362,12 +362,12 @@ export default {
 
       .main-pharagraph {
         font-size: 25px;
-        color: #7099a5;
+        color: $septenary;
         line-height: 40px;
       }
 
       .sub-pharagraph {
-        color: #7099a5;
+        color: $septenary;
         font-size: 17px;
         line-height: 30px;
         margin-bottom: 25px;
@@ -504,7 +504,6 @@ export default {
 
 .fourth {
   .row {
-    justify-content: center;
     padding: 10px;
     margin-top: -250px;
     .box {
