@@ -29,7 +29,9 @@ export default {
           </div>
           <div class="col-sm-12 col-md-12 col-lg-6">
             <button>
-              <router-link :to="{ name: 'about' }">MORE ABOUT US</router-link>
+              <router-link :to="{ name: 'about' }"
+                >MEET YOUR INSTRUCTORS</router-link
+              >
             </button>
           </div>
         </div>
@@ -236,13 +238,13 @@ export default {
 }
 
 .tabella-price {
-  background-color: white;
+  background-color: $primary;
   text-align: center;
-  border: 1px solid #7799ad;
+  border: 1px solid $septenary;
   margin: 50px 0 50px 0;
 
   .col {
-    border: 1px solid #7799ad;
+    border: 1px solid $septenary;
     padding: 20px;
   }
 
@@ -254,7 +256,7 @@ export default {
   background-color: #e5f2fa;
   padding: 100px 0 100px 0;
   p {
-    color: #7799ad;
+    color: $septenary;
     font-size: 20px;
     padding: 10px;
   }
@@ -266,7 +268,7 @@ export default {
     border-radius: 25px;
     margin-top: 75px;
     width: 80%;
-    color: white;
+    color: $primary;
     background-color: #7abc64;
     border: none;
     text-decoration: none;
@@ -284,7 +286,7 @@ export default {
 
   i {
     font-size: 15px;
-    color: #7799ad;
+    color: $septenary;
   }
 }
 
@@ -292,7 +294,7 @@ export default {
   background-color: #f6f6f6;
   padding: 100px 0 100px 0;
   p {
-    color: #7799ad;
+    color: $septenary;
     font-size: 20px;
     padding: 5px;
   }
@@ -304,7 +306,7 @@ export default {
     border-radius: 25px;
     margin-top: 75px;
     width: 80%;
-    color: white;
+    color: $primary;
     background-color: #7abc64;
     border: none;
     text-decoration: none;
@@ -322,7 +324,7 @@ export default {
 
   i {
     font-size: 15px;
-    color: #7799ad;
+    color: $septenary;
   }
 }
 
@@ -332,7 +334,7 @@ export default {
   border-radius: 25px;
   background-color: #7abc64;
   border: none;
-  color: white;
+  color: $primary;
   width: 50%;
 }
 
@@ -357,8 +359,11 @@ export default {
 
 .section-box {
   padding-top: 30px;
+  h1 {
+    margin-top: 30px;
+  }
   h5 {
-    color: #7799ad;
+    color: $septenary;
     font-size: 25px;
     padding-top: 15px;
   }
@@ -388,7 +393,7 @@ export default {
 
   p {
     font-size: 18px;
-    color: #7799ad;
+    color: $sextenary;
     margin-bottom: 4rem;
   }
 }
