@@ -43,6 +43,7 @@ export default {
 
 <template>
   <header>
+    <!-- Barra Pubblicitaria -->
     <div class="spam-bar">
       <div class="container">
         <div class="left-spam">We have a 95% Succesful Pass Rate!</div>
@@ -53,14 +54,17 @@ export default {
         </div>
       </div>
     </div>
+    <!-- Barra di Navigazione -->
     <div class="topbar">
-      <div class="container">
+      <div class="topbar-container">
         <div class="logo-box">
           <a href="#">
-            <img src="../assets/avada-drivers-logo-1x.png" alt="logo Avada" />
+            <router-link :to="{ name: 'home' }">
+              <img src="../assets/avada-drivers-logo-1x.png" alt="logo Avada" />
+            </router-link>
           </a>
         </div>
-        <nav class="navbar">
+        <nav class="my-navbar">
           <ul>
             <li v-for="(link, i) in links" :key="i">
               <router-link
@@ -71,6 +75,10 @@ export default {
                 {{ link.item }}
               </router-link>
             </li>
+            <!-- Hamburger Menu -->
+            <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+            </label>
           </ul>
         </nav>
       </div>
@@ -82,6 +90,7 @@ export default {
 //Scss relativo alla sola sezione di header
 @use '../styles/partials/variables' as *;
 
+// Style Barra Pubblicitaria
 .spam-bar {
   background: #333333;
 
@@ -104,23 +113,26 @@ export default {
   }
 }
 
+// Style Barra di Navigazione
 .topbar {
   background: #00000058;
   width: 100%;
+  height: 120px;
   box-shadow: 0 4px 5px -4px gray;
   position: absolute;
-  top: 39px;
-  left: 0;
 
-  .container {
+  .topbar-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1320px;
+    margin: 0 auto;
     height: 100%;
     padding: 30px 0;
 
     .logo-box {
-      width: 280px;
+      min-width: 200px;
+      margin-left: 30px;
     }
 
     ul {
@@ -128,9 +140,11 @@ export default {
       display: flex;
       justify-content: space-between;
       margin-bottom: 0;
+      padding: 0;
 
       li {
-        padding-left: 65px;
+        display: inline-block;
+        margin: 0 15px;
 
         a {
           text-decoration: none;
@@ -146,6 +160,24 @@ export default {
           &.active {
             border-bottom: 3px solid #7abc64;
           }
+        }
+      }
+      // Style Haburger Menu
+      .checkbtn {
+        font-size: 40px;
+        color: #ffff;
+        cursor: pointer;
+        display: none;
+        margin-right: 30px;
+      }
+      // Media Query Tablet/Smartphone
+      @media all and (max-width: 1000px) {
+        li {
+          display: none;
+        }
+
+        .checkbtn {
+          display: block;
         }
       }
     }

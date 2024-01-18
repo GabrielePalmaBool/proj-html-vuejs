@@ -13,6 +13,7 @@ export default {
 
 <template>
   <main>
+    <!-- Sezione Jumbotron -->
     <div class="jumbotron">
       <div class="container">
         <h1>About</h1>
@@ -65,7 +66,7 @@ export default {
             semper.
           </p>
         </div>
-        <!-- Card Sezione Team -->
+        <!-- Prima Card -->
         <div class="row">
           <div class="col-12">
             <div class="card">
@@ -122,7 +123,7 @@ export default {
             </div>
           </div>
         </div>
-
+        <!-- Seconda Card -->
         <div class="row">
           <div class="col-12">
             <div class="card">
@@ -179,7 +180,7 @@ export default {
             </div>
           </div>
         </div>
-
+        <!-- Terza Card -->
         <div class="row">
           <div class="col-12">
             <div class="card">
@@ -250,8 +251,8 @@ export default {
             semper.
           </p>
         </div>
-
         <div class="row">
+          <!-- Sezione Accordion di sinistra -->
           <div class="col-sm-12 col-md-12 col-lg-6">
             <ul class="accordion">
               <li>
@@ -291,7 +292,7 @@ export default {
               </li>
             </ul>
           </div>
-
+          <!-- Sezione Accordion di destra -->
           <div class="col-sm-12 col-md-12 col-lg-6">
             <ul class="accordion">
               <li>
@@ -344,6 +345,7 @@ export default {
 //Scss relativo alla sola sezione di header
 @use '../styles/partials/variables' as *;
 
+// Styles Jumbotron
 .jumbotron {
   background-image: url(../assets/default-ptb-retina.jpg);
   background-size: cover;
@@ -359,6 +361,7 @@ export default {
   }
 }
 
+// Styles Sezione Mission
 .mission-section {
   margin: 80px 0;
 
@@ -400,6 +403,7 @@ export default {
   }
 }
 
+// Styles sezione Team
 .team-section {
   background-image: linear-gradient(#eef5f7, #ffff);
   padding: 80px 0 120px 0;
@@ -506,6 +510,7 @@ export default {
   }
 }
 
+// Styles sezione Promise
 .promise-section {
   background-image: url(../assets/about-promise-background.jpg);
   background-size: cover;
@@ -530,6 +535,7 @@ export default {
     }
   }
 
+  // Styles Accordion
   .accordion {
     width: 100%;
 
