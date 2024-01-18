@@ -29,6 +29,10 @@ const router = createRouter({
       name: 'NotFound',
       component: NotFound
     }
-  ]
+  ],
+  scrollBehavior(to, from, savedPosition) {
+    // Torna all'inizio quando si preme su un button per cambiare pagina
+    return { top: 0 }
+  }
 })
 export { router }

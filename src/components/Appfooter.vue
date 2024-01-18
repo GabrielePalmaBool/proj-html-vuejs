@@ -147,13 +147,13 @@ export default {
 
 a {
   text-decoration: none;
-  color: #7799ad;
+  color: $septenary;
 }
 
 #button-subscribe {
   width: 100%;
-  color: white;
-  background-color: #7abc64;
+  color: $primary;
+  background-color: $octarium;
   border: none;
 }
 
@@ -163,8 +163,8 @@ a {
 }
 
 .subscribe:hover {
-  color: #7abc64;
-  border-color: #7abc64;
+  color: $octarium;
+  border-color: $octarium;
   transition: all 0.2s;
 }
 
@@ -178,13 +178,13 @@ a {
 }
 
 span:hover {
-  color: #7abc64;
+  color: $octarium;
   transition: all 0.2s;
 }
 
 button .section-subscribe {
-  background-color: #7abc64;
-  color: white;
+  background-color: $octarium;
+  color: $primary;
 }
 
 input {
@@ -199,12 +199,12 @@ input {
 }
 
 p {
-  color: #7799ad;
+  color: $septenary;
   padding-top: 10px;
 }
 
 .link-footer {
-  color: #7abc64;
+  color: $octarium;
 }
 
 img {
@@ -215,22 +215,22 @@ img {
   margin-top: 30px;
   padding: 11px 23px;
   border-radius: 25px;
-  background-color: #7abc64;
+  background-color: $octarium;
   border: none;
-  color: white;
+  color: $primary;
 }
 
 button {
   margin-top: 30px;
   padding: 11px 23px;
   border-radius: 25px;
-  border: 3px solid #929aa3;
+  border: 3px solid $sextenary;
   background-color: transparent;
-  color: #929aa3;
+  color: $sextenary;
 }
 
 h3 {
-  color: white;
+  color: $primary;
   font-size: 25px;
 }
 
@@ -246,7 +246,7 @@ h3 {
 
 .last-footer {
   background-color: #333333;
-  height: 80px;
+  height: auto;
 }
 
 .social-section {
