@@ -9,7 +9,7 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
-      path: '/',
+      path: '/home',
       name: 'home',
       component: AppmainHome
     },
@@ -23,6 +23,26 @@ const router = createRouter({
       path: '/prices',
       name: 'prices',
       component: AppmainPrice
+    },
+    {
+      path: '/courses',
+      name: 'courses',
+      component: NotFound
+    },
+    {
+      path: '/locations',
+      name: 'locations',
+      component: NotFound
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: NotFound
+    },
+    {
+      path: '/book',
+      name: 'book',
+      component: NotFound
     },
     // Nel caso la pagina non venga trovata
     {

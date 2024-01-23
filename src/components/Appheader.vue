@@ -3,7 +3,7 @@ export default {
   name: 'Appheader',
   data() {
     return {
-      activeMenu: 1,
+      activeMenu: 0,
 
       links: [
         {
@@ -19,16 +19,20 @@ export default {
           name: 'prices'
         },
         {
-          item: 'COURSES'
+          item: 'COURSES',
+          name: 'courses'
         },
         {
-          item: 'LOCATIONS'
+          item: 'LOCATIONS',
+          name: 'locations'
         },
         {
-          item: 'BLOG'
+          item: 'BLOG',
+          name: 'blog'
         },
         {
-          item: 'BOOK NOW'
+          item: 'BOOK NOW',
+          name: 'book'
         }
       ]
     }
@@ -36,7 +40,13 @@ export default {
   methods: {
     activeLink(i) {
       this.activeMenu = i
+      this.$router.currentRoute
+      console.log(this.$router.currentRoute._value)
     }
+  },
+
+  mounted() {
+    console.log(this.$router.currentRoute._value.path)
   }
 }
 </script>
