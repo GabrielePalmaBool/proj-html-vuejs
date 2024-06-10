@@ -9,23 +9,23 @@ export default {
       testimonial: [
         {
           name: 'Sophia Jones',
-          image: '/testimonial-sophia.png'
+          image: '/public/testimonial-sophia.png'
         },
         {
           name: 'Harold Green',
-          image: '/testimonial-harold.png'
+          image: '/public/testimonial-harold.png'
         },
         {
           name: 'Grant Harvey',
-          image: '/testimonial-grant.png'
+          image: '/public/testimonial-grant.png'
         },
         {
           name: 'Kate Lewis',
-          image: '/testimonial-kate.png'
+          image: '/public/testimonial-kate.png'
         },
         {
           name: 'Kelly Johnson',
-          image: '/testimonial-kelly.png'
+          image: '/public/testimonial-kelly.png'
         }
       ]
     }
@@ -108,7 +108,7 @@ export default {
 //Scss relativo alla sola sezione di header
 @use '../styles/partials/variables' as *;
 .carosello {
-  background-image: url('/testimonial-background.jpg');
+  background-image: url('/public/testimonial-background.jpg');
   background-size: cover;
   padding: 50px 0;
   img {

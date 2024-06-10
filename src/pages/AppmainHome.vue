@@ -90,7 +90,10 @@ export default {
           <div class="col col-lg-5 p-5">
             <div class="box">
               <div class="subbox">
-                <img src="/homepage-main-new-corner.jpg" alt="sub box1" />
+                <img
+                  src="/public/homepage-main-new-corner.jpg"
+                  alt="sub box1"
+                />
               </div>
               <div class="text">
                 <h2>Courses</h2>
@@ -110,7 +113,7 @@ export default {
             <div class="col p-5">
               <div class="img">
                 <img
-                  src="/homepage-main-courses-passplus.jpg"
+                  src="/public/homepage-main-courses-passplus.jpg"
                   alt="immagine auto1"
                 />
               </div>
@@ -122,7 +125,7 @@ export default {
             <div class="col p-5">
               <div class="img">
                 <img
-                  src="/homepage-main-course-intensive.jpg"
+                  src="/public/homepage-main-course-intensive.jpg"
                   alt="immagine auto2"
                 />
               </div>
@@ -132,7 +135,7 @@ export default {
             <div class="col p-5">
               <div class="img">
                 <img
-                  src="/homepage-main-courses-instructor.jpg"
+                  src="/public/homepage-main-courses-instructor.jpg"
                   alt="immagine auto3"
                 />
               </div>
@@ -146,7 +149,7 @@ export default {
 
     <!-- immagine triangolo -->
     <div class="TrImg">
-      <img src="/homepage-triangle-.png" alt="immagine triangolo" />
+      <img src="/public/homepage-triangle-.png" alt="immagine triangolo" />
     </div>
 
     <!-- quarto container -->
@@ -209,7 +212,7 @@ export default {
             <div class="box">
               <div class="avatar">
                 <img
-                  src="/homepage-main-imgavatar1.jpg"
+                  src="/public/homepage-main-imgavatar1.jpg"
                   alt="immagine avatar1"
                 />
                 <div class="text">
@@ -229,7 +232,7 @@ export default {
             <div class="box middle">
               <div class="avatar">
                 <img
-                  src="/homepage-main-imgavatar2.jpg"
+                  src="/public/homepage-main-imgavatar2.jpg"
                   alt="immagine avatar1"
                 />
                 <div class="text">
@@ -249,7 +252,7 @@ export default {
             <div class="box">
               <div class="avatar">
                 <img
-                  src="/homepage-main-imgavatar3.jpg"
+                  src="/public/homepage-main-imgavatar3.jpg"
                   alt="immagine avatar1"
                 />
                 <div class="text">
@@ -284,7 +287,7 @@ export default {
               <div class="col">
                 <div class="img">
                   <img
-                    src="/homepage-main-blog-choosecar-700x441.jpg"
+                    src="/public/homepage-main-blog-choosecar-700x441.jpg"
                     alt="immagine auto4"
                   />
                 </div>
@@ -297,7 +300,7 @@ export default {
               <div class="col">
                 <div class="img">
                   <img
-                    src="/homepage-main-blogpost-10and2-700x441.jpg"
+                    src="/public/homepage-main-blogpost-10and2-700x441.jpg"
                     alt="immagine auto5"
                   />
                 </div>
@@ -316,7 +319,10 @@ export default {
         </div>
         <!-- Immagine traingolo bianco -->
         <div class="imgTr2">
-          <img src="/homepage-triangle-white-.png" alt="immagine triangolo" />
+          <img
+            src="/public/homepage-triangle-white-.png"
+            alt="immagine triangolo"
+          />
         </div>
       </div>
     </div>
@@ -328,7 +334,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .jumbo {
-  background-image: url('/homepage-main-background.jpg');
+  background-image: url('/public/homepage-main-background.jpg');
   height: 700px;
   background-size: cover;
   color: $primary;
@@ -405,7 +411,7 @@ export default {
 }
 
 .jumbo3 {
-  background-image: url('/homepage-main3-background.jpg');
+  background-image: url('/public/homepage-main3-background.jpg');
   height: 500px;
   background-size: cover;
   background-position: center bottom;
@@ -635,7 +641,7 @@ export default {
 }
 
 .jumbo4 {
-  background-image: url('/homepage-main4-background.jpg');
+  background-image: url('/public/homepage-main4-background.jpg');
   height: 620px;
   background-size: cover;
   background-position: center bottom;
@@ -653,7 +659,7 @@ export default {
         background-color: $primary;
         box-shadow: 0px 0px 20px 0px #c7c7c7, 0 -5px 0px 0px rgb(88, 88, 88);
         .img {
-          mask-image: url('/homepage-maskimg-.svg');
+          mask-image: url('/public/homepage-maskimg-.svg');
           mask-size: 100%;
           mask-position: 25% 25%;
           width: 475px;

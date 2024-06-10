@@ -30,7 +30,7 @@ export default {
       <div class="container">
         <div class="row">
           <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-            <img src="/avada-drivers-logo-1x.png" alt="" />
+            <img src="/public/avada-drivers-logo-1x.png" alt="" />
             <p>
               Avada Driving School is the right choice for experienced drivers
               looking for a refresher course, or the brand new driver wanting to
@@ -137,7 +137,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .my-footer {
-  background-image: url('/footer-background-color.jpg');
+  background-image: url('/public/footer-background-color.jpg');
   height: auto;
   padding: 50px 0 50px 0;
   background-size: cover;
@@ -197,7 +197,7 @@ input {
 }
 
 .macro-section-subscribe {
-  background-image: url('/newsletter_background.jpg');
+  background-image: url('/public/newsletter_background.jpg');
   background-size: cover;
   padding-top: 30px;
 }

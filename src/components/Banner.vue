@@ -28,7 +28,7 @@ export default {
 @use '../styles/partials/variables' as *;
 
 .section-telephone {
-  background-image: url('/horizontal-cta-background.jpg');
+  background-image: url('/public/horizontal-cta-background.jpg');
   color: white;
   height: auto;
   background-size: cover;

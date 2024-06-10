@@ -37,7 +37,7 @@ export default {
                 ultrices auctor sapien id cursus.
               </p>
               <div class="box-labels">
-                <img src="../assets/labels-800x174.png" alt="" />
+                <img src="/public/labels-800x174.png" alt="" />
               </div>
             </div>
           </div>
@@ -45,7 +45,10 @@ export default {
           <div class="col-lg-6">
             <div class="right-part">
               <div class="box-mike-img">
-                <img src="/about-page-mike-intro-fade.png" alt="Mike-Intro" />
+                <img
+                  src="/public/about-page-mike-intro-fade.png"
+                  alt="Mike-Intro"
+                />
               </div>
             </div>
           </div>
@@ -70,7 +73,10 @@ export default {
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
-                    <img src="/mike-hart-about-page.jpg" alt="mike-profile" />
+                    <img
+                      src="/public/mike-hart-about-page.jpg"
+                      alt="mike-profile"
+                    />
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -124,7 +130,10 @@ export default {
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
-                    <img src="/john-smith-about-page.jpg" alt="mike-profile" />
+                    <img
+                      src="/public/john-smith-about-page.jpg"
+                      alt="mike-profile"
+                    />
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -178,7 +187,10 @@ export default {
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
-                    <img src="/angela-hart-about-page.jpg" alt="mike-profile" />
+                    <img
+                      src="/public/angela-hart-about-page.jpg"
+                      alt="mike-profile"
+                    />
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -335,7 +347,7 @@ export default {
 
 // Styles Jumbotron
 .jumbotron {
-  background-image: url(/default-ptb-retina.jpg);
+  background-image: url('/public/default-ptb-retina.jpg');
   background-size: cover;
   background-position: bottom;
   height: 380px;
@@ -500,7 +512,7 @@ export default {
 
 // Styles sezione Promise
 .promise-section {
-  background-image: url(/about-promise-background.jpg);
+  background-image: url('/public/about-promise-background.jpg');
   background-size: cover;
   background-position: bottom;
   padding: 80px 0;

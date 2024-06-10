@@ -70,7 +70,7 @@ export default {
         <div class="logo-box">
           <a href="#">
             <router-link :to="{ name: 'home' }">
-              <img src="/avada-drivers-logo-1x.png" alt="logo Avada" />
+              <img src="/public/avada-drivers-logo-1x.png" alt="logo Avada" />
             </router-link>
           </a>
         </div>
