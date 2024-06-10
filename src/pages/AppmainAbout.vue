@@ -45,10 +45,7 @@ export default {
           <div class="col-lg-6">
             <div class="right-part">
               <div class="box-mike-img">
-                <img
-                  src="../assets/about-page-mike-intro-fade.png"
-                  alt="Mike-Intro"
-                />
+                <img src="/about-page-mike-intro-fade.png" alt="Mike-Intro" />
               </div>
             </div>
           </div>
@@ -73,10 +70,7 @@ export default {
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
-                    <img
-                      src="../assets/mike-hart-about-page.jpg"
-                      alt="mike-profile"
-                    />
+                    <img src="/mike-hart-about-page.jpg" alt="mike-profile" />
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -130,10 +124,7 @@ export default {
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
-                    <img
-                      src="../assets/john-smith-about-page.jpg"
-                      alt="mike-profile"
-                    />
+                    <img src="/john-smith-about-page.jpg" alt="mike-profile" />
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -187,10 +178,7 @@ export default {
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                   <div class="box-profile">
-                    <img
-                      src="../assets/angela-hart-about-page.jpg"
-                      alt="mike-profile"
-                    />
+                    <img src="/angela-hart-about-page.jpg" alt="mike-profile" />
                   </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-8">
@@ -347,7 +335,7 @@ export default {
 
 // Styles Jumbotron
 .jumbotron {
-  background-image: url(../assets/default-ptb-retina.jpg);
+  background-image: url(/default-ptb-retina.jpg);
   background-size: cover;
   background-position: bottom;
   height: 380px;
@@ -512,7 +500,7 @@ export default {
 
 // Styles sezione Promise
 .promise-section {
-  background-image: url(../assets/about-promise-background.jpg);
+  background-image: url(/about-promise-background.jpg);
   background-size: cover;
   background-position: bottom;
   padding: 80px 0;

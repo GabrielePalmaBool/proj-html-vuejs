@@ -221,7 +221,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 .jumbo {
-  background-image: url('..\assets/prices-hero-background.jpg');
+  background-image: url('/prices-hero-background.jpg');
   height: 380px;
   background-size: cover;
   background-position: bottom;
@@ -370,7 +370,7 @@ export default {
 }
 
 .section-telephone {
-  background-image: url('..\assets/prices-hero-background.jpg');
+  background-image: url('/prices-hero-background.jpg');
   color: white;
   height: auto;
   background-size: cover;
